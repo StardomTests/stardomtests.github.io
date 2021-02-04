@@ -1,0 +1,250 @@
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  flex: 1;
+  z-index: 1;
+}
+
+.body {
+  background: #212121;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: #e0e0e0;
+}
+
+.header {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 1);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  z-index: 10;
+  border-radius: 0px 0px 0px 0px;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.airframe {
+  position: fixed;
+  top: 10%;
+  bottom: 0;
+  left: 1rem;
+  right: 0;
+  overflow-y: scroll;
+  font-family: Roboto Mono;
+  transition: background 0.5s linear;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 5px;
+}
+
+#catch {
+  position: fixed;
+  z-index: 6;
+  color: #e0e0e0;
+}
+
+#icon {
+  width: 1.5rem;
+  position: relative;
+  top: 50%;
+  transform: translate(-0%, -50%);
+}
+
+a {
+  color: inherit;
+}
+
+#dslogo {
+  width: 4rem;
+  border-radius: 10px;
+}
+
+.ds1 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds1:hover {
+  border: solid 4px rgba(0, 77, 194, 1);
+}
+
+.ds2 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds2:hover {
+  border: solid 4px rgba(10, 97, 17, 1);
+}
+
+.ds3 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds3:hover {
+  border: solid 4px #00ff87;
+}
+
+.ds4 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds4:hover {
+  border: solid 4px #d61e1e;
+}
+
+.ds5 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds5:hover {
+  border: solid 4px #d62976;
+}
+
+.ds6 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds6:hover {
+  border: solid 4px #000;
+}
+
+.ds7 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds7:hover {
+  border: solid 4px #f96854;
+}
