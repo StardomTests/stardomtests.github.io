@@ -1,0 +1,15 @@
+{
+  "short_name": "Stardom Games",
+  "name": "Stardom Games",
+  "icons": [
+    {
+      "src": "https://github.com/jordanreger/media/blob/main/stardomgames-removebg-preview.png?raw=true",
+      "sizes": "375x375",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#212121",
+  "background_color": "#212121"
+}
