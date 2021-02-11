@@ -186,3 +186,4 @@ function Home() {
     </div>
   );
 }
+<center> Copyright 2019 - 2021 Stardom Games </center>
