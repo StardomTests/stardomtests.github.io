@@ -182,8 +182,21 @@ function Home() {
           </div>
         </span>
         <br />
+        <br />
+        <span id="hover" onClick={egg7}>
+          <div className="ds8">
+            
+            <br />
+            <span id="dscontent">
+              Copyright Stardom Games 2019 - 2021{" "}
+             
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
       </div>
     </div>
   );
 }
-<center><font size="+2"> Copyright 2019 - 2021 Stardom Games </center></font>
+
