@@ -58,12 +58,13 @@ function Home() {
       </div>
       <div className="airframe">
         <h1>Games</h1>
-        <span id="hover" onClick={egg1}>
+        <span id="hover">
           <div className="ds1">
             <img
               src="https://raw.githubusercontent.com/jordanreger/media/main/Dungeon_Slayer_1.png"
               alt="dslogo"
               id="dslogo"
+              onClick={egg1}
             />
             <br />
             <span id="dscontent">
@@ -80,12 +81,13 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg2}>
+        <span id="hover">
           <div className="ds2">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png"
               alt="abp2logo"
               id="dslogo"
+               onClick={egg2}
             />
             <br />
             <span id="dscontent">
@@ -98,12 +100,13 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg3}>
+        <span id="hover">
           <div className="ds3">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png"
               alt="abp2logo"
               id="dslogo"
+     onClick={egg3}
             />
             <br />
             <span id="dscontent">
@@ -118,12 +121,13 @@ function Home() {
         <br />
         <hr />
         <h1>Socials</h1>
-        <span id="hover" onClick={egg4}>
+        <span id="hover">
           <div className="ds4">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/youtube.png"
               alt="abp2logo"
               id="dslogo"
+     onClick={egg4}
             />
             <br />
             <span id="dscontent">
@@ -136,12 +140,13 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg5}>
+        <span id="hover">
           <div className="ds5">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
               alt="abp2logo"
               id="dslogo"
+     onClick={egg5}
             />
             <br />
             <span id="dscontent">
@@ -152,12 +157,13 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg6}>
+        <span id="hover">
           <div className="ds6">
             <img
               src="https://github.com/jordan-trempert/media/blob/main/github.png?raw=true"
               alt="abp2logo"
               id="dslogo"
+     onClick={egg6}
             />
             <br />
             <span id="dscontent">
@@ -167,12 +173,13 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg7}>
+        <span id="hover">
           <div className="ds7">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/patreon.jpg"
               alt="abp2logo"
               id="dslogo"
+     onClick={egg7}
             />
             <br />
             
@@ -190,6 +197,7 @@ function Home() {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/email-309491_960_720.png"
               alt="dslogo"
               id="dslogo"
+     onClick={egg6}
             />
             <br />
             <span id="dscontent">
