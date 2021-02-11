@@ -48,12 +48,12 @@ function Home() {
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
-        <img
-          src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
-          alt="logo"
-          id="logo"
-          draggable="false"
-        ></img>
+          <img
+            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            alt="logo"
+            id="logo"
+            draggable="false"
+          ></img>
         </span>
       </div>
       <div className="airframe">
@@ -175,6 +175,7 @@ function Home() {
               id="dslogo"
             />
             <br />
+            
             <span id="dscontent">
               Patreon -{" "}
               <a href="https://www.patreon.com/stardomgames">Donate!</a>
@@ -183,6 +184,22 @@ function Home() {
         </span>
         <br />
         <br />
+        <span id="hover">
+          <div className="ds6">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/email-309491_960_720.png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              {" "}
+              <a href="mailto:stardomgames1@gmail.com">
+                Email
+              </a>
+            </span>
+          </div>
+        </span>
         <span id="hover">
           <div className="ds8">
             
@@ -199,4 +216,3 @@ function Home() {
     </div>
   );
 }
-
