@@ -190,7 +190,7 @@ function Home() {
             <span id="dscontent">
               Copyright Stardom Games 2019 - 2021{" "}
              
-            
+            </span>
           </div>
         </span>
         <br />
