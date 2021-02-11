@@ -45,6 +45,7 @@ function Home() {
     setBG("#f96854");
   }
   return (
+  
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
@@ -56,8 +57,9 @@ function Home() {
           ></img>
         </span>
       </div>
+      
       <div className="airframe">
-        <h1>Games</h1>
+        <h1 onClick={egg6}>Games</h1>
         <span id="hover">
           <div className="ds1">
             <img
@@ -76,6 +78,7 @@ function Home() {
               <a href="https://play.google.com/store/apps/details?id=com.stardom.dungeonslayer">
                 Android
               </a>
+              
             </span>
           </div>
         </span>
@@ -120,7 +123,7 @@ function Home() {
         <br />
         <br />
         <hr />
-        <h1>Socials</h1>
+        <h1 onClick={egg6}>Socials</h1>
         <span id="hover">
           <div className="ds4">
             <img
