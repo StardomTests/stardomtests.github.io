@@ -205,7 +205,7 @@ function Home() {
         <span id="hover">
           <div className="ds8">
             
-            <br />
+            
             <span id="dscontent">
               Copyright Stardom Games 2019 - 2021{" "}
              
