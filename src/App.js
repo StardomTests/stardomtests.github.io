@@ -24,7 +24,7 @@ function Home() {
     setBG("Black");
   }
   function egg1() {
-    setBG("rgba(0, 77, 194, 1)");
+    setBG("linear-gradient(Red, Green, Blue, Yellow)");
   }
   function egg2() {
     setBG("rgba(10, 97, 17, 1)");
