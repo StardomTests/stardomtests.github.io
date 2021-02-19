@@ -5,7 +5,7 @@ import {
   Route /*, Link*/
 } from "react-router-dom";
 import "./styles.css";
-
+import "./manifest.json";
 export default function App() {
   return (
     <Router>
