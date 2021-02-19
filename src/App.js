@@ -78,7 +78,7 @@ function Home() {
               <a href="https://play.google.com/store/apps/details?id=com.stardom.dungeonslayer">
                 Android
               </a>
-              / iOS
+              /iOS
               
             </span>
           </div>
