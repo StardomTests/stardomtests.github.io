@@ -1,0 +1,16 @@
+ {
+    "name": "Stardom Games",
+    "short_name": "Stardom",
+    "theme_color": "#212121",
+    "background_color": "#212121",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "http://stardomga.me",
+    "description": "Official Stardom Games Webiste",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://raw.githubusercontent.com/jordanreger/media/main/stardomlogo.png",
+            "sizes": "1024x1024"
+        }
+    ]
