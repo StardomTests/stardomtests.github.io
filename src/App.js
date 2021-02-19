@@ -45,7 +45,7 @@ function Home() {
     setBG("#f96854");
   }
   return (
-  
+  <link rel="manifest" href="manifest.json">
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
