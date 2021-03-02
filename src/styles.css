@@ -209,11 +209,6 @@ a {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-.ds5:hover::after {
-  border: solid 4px rgba(221, 42, 123, 1)
-
-}
-
 .ds6 {
   position: relative;
   background-color: rgba(255, 255, 255, 0.05);
