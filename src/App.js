@@ -1,260 +1,188 @@
-hr {
-  border: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  flex: 1;
-  z-index: 1;
-}
+import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route /*, Link*/
+} from "react-router-dom";
+import "./styles.css";
 
-.body {
-  background: #212121;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  color: #e0e0e0;
+export default function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
+function Home() {
+  const [bg, setBG] = useState("#000");
 
-.header {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 1);
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 10%;
-  z-index: 10;
-  border-radius: 0px 0px 0px 0px;
-}
-
-#logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2rem;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-.airframe {
-  position: fixed;
-  top: 10%;
-  bottom: 0;
-  left: 1rem;
-  right: 0;
-  overflow-y: scroll;
-  font-family: Roboto Mono;
-  transition: background 0.5s linear;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 1rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: #424242;
-  border-radius: 5px;
-}
-
-#catch {
-  position: fixed;
-  z-index: 6;
-  color: #e0e0e0;
-}
-
-#icon {
-  width: 1.5rem;
-  position: relative;
-  top: 50%;
-  transform: translate(-0%, -50%);
-}
-
-a {
-  color: inherit;
-}
-
-#dslogo {
-  width: 4rem;
-  border-radius: 10px;
-}
-
-.ds1 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds1:hover {
-  border: solid 4px rgba(0, 77, 194, 1);
-}
-
-.ds2 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds2:hover {
-  border: solid 4px rgba(10, 97, 17, 1);
-}
-
-.ds3 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds3:hover {
-  border: solid 4px #00ff87;
-}
-
-.ds4 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds4:hover {
-  border: solid 4px #d61e1e;
-}
-
-.ds5 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds5:hover {
-  border: double 4px;
-  border-radius: 20px;
-  border-width: 1;
-  background-image: linear-gradient(rgba(44,44,44), rgba(44,44,44)), 
-  linear-gradient(90deg, rgba(81,91,212,1) 0%, rgba(129,52,175,1) 17%, rgba(221,42,123,1) 43%, rgba(254,218,119,1) 74%, rgba(245,133,41,1) 100%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
-}
-.ds5:hover::after {
-  border: solid 4px rgba(221, 42, 123, 1)
-
-}
-
-.ds6 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds6:hover {
-  border: solid 4px #000;
-}
-
-.ds7 {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
-  border: solid 4px #212121;
-  webkit-transition: background-color 250ms ease-in-out;
-  -moz-transition: background-color 250ms ease-in-out;
-  -ms-transition: background-color 250ms ease-in-out;
-  -o-transition: background-color 250ms ease-in-out;
-  transition: background-color 250ms ease-in-out;
-  webkit-transition: border-color 250ms ease-in-out;
-  -moz-transition: border-color 250ms ease-in-out;
-  -ms-transition: border-color 250ms ease-in-out;
-  -o-transition: border-color 250ms ease-in-out;
-  transition: border-color 250ms ease-in-out;
-  padding: 1rem;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.ds7:hover {
-  border: solid 4px #f96854;
+  function egg() {
+    setBG("Black");
+  }
+  function egg1() {
+    setBG("rgba(0, 77, 194, 1)");
+  }
+  function egg2() {
+    setBG("rgba(10, 97, 17, 1)");
+  }
+  function egg3() {
+    setBG("#00ff87");
+  }
+  function egg4() {
+    setBG("#d61e1e");
+  }
+  function egg5() {
+    setBG("#d62976");
+  }
+  function egg6() {
+    setBG("Black");
+  }
+  function egg7() {
+    setBG("#f96854");
+  }
+  return (
+    <div className="body">
+      <div className="header" style={{ backgroundColor: bg }}>
+        <span onClick={egg}>
+          <img
+            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            alt="logo"
+            id="logo"
+            draggable="false"
+          ></img>
+        </span>
+      </div>
+      <div className="airframe">
+        <h1>Games</h1>
+        <span id="hover" onClick={egg1}>
+          <div className="ds1">
+            <img
+              src="https://raw.githubusercontent.com/jordanreger/media/main/Dungeon_Slayer_1.png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Dungeon Slayer -{" "}
+              <a href="https://github.com/StardomGames/Dungeon-Slayer/releases">
+                Windows
+              </a>
+              /
+              <a href="https://play.google.com/store/apps/details?id=com.stardom.dungeonslayer">
+                Android
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg2}>
+          <div className="ds2">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              A Blocky Puzzle 2 -{" "}
+              <a href="https://github.com/StardomGames/A-Blocky-Puzzle-2/releases">
+                Windows
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg3}>
+          <div className="ds3">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              A Blocky Puzzle -{" "}
+              <a href="https://github.com/StardomGames/A-Blocky-Puzzle/releases">
+                Windows
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <hr />
+        <h1>Socials</h1>
+        <span id="hover" onClick={egg4}>
+          <div className="ds4">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/youtube.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              YouTube -{" "}
+              <a href="https://www.youtube.com/channel/UCgmh2uIuUPxIep-qJ2WOEbg">
+                Subscribe!
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg5}>
+          <div className="ds5">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Instagram -{" "}
+              <a href="https://instagram.com/stardom.games">Follow!</a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg6}>
+          <div className="ds6">
+            <img
+              src="https://github.com/jordan-trempert/media/blob/main/github.png?raw=true"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Github - <a href="https://github.com/stardomgames">Projects!</a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg7}>
+          <div className="ds7">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/patreon.jpg"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Patreon -{" "}
+              <a href="https://www.patreon.com/stardomgames">Donate!</a>
+            </span>
+          </div>
+        </span>
+        <br />
+      </div>
+    </div>
+  );
 }
