@@ -200,14 +200,11 @@ a {
 }
 
 .ds5:hover {
-  border: double 4px transparent;
+  border: double 4px;
   border-radius: 20px;
   border-width: 1;
   background-image: linear-gradient(rgba(44,44,44), rgba(44,44,44)), 
   linear-gradient(90deg, rgba(81,91,212,1) 0%, rgba(129,52,175,1) 17%, rgba(221,42,123,1) 43%, rgba(254,218,119,1) 74%, rgba(245,133,41,1) 100%);
-
-  -webkit-background-origin: border-box;
-  -webkit-background-clip: padding-box, border-box;
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
