@@ -135,7 +135,7 @@ a {
 }
 
 .ds2:hover {
-  border: rgba(0,255,3,1);
+  border: solid 4px rgba(0,255,3,1);
 }
 
 .ds3 {
@@ -158,7 +158,7 @@ a {
 }
 
 .ds3:hover {
-  border: rgba(0,255,3,1);
+  border: solid 4px rgba(0,255,3,1);
 }
 
 .ds4 {
@@ -181,7 +181,7 @@ a {
 }
 
 .ds4:hover {
-  border: rgba(222,41,37,1);
+  border: solid 4px rgba(222,41,37,1);
 }
 
 .ds5 {
@@ -235,7 +235,7 @@ a {
 
 .ds6:hover {
   
-  border: rgba(0,0,0,1);
+  border: solid 4px rgba(0,0,0,1);
 
 }
 
@@ -260,6 +260,6 @@ a {
 
 .ds7:hover {
   
-  border: rgba(245,104,84,1);
+  border: solid 4px rgba(245,104,84,1);
 
 }
