@@ -27,10 +27,10 @@ function Home() {
     setBG("rgba(0, 77, 194, 1)");
   }
   function egg2() {
-    setBG("rgba(10, 97, 17, 1)");
+    setBG("rgb(0,255,3)");
   }
   function egg3() {
-    setBG("#00ff87");
+    setBG("rgb(0,255,3)");
   }
   function egg4() {
     setBG("#d61e1e");
