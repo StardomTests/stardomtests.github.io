@@ -262,9 +262,10 @@ a {
 }
 
 .ds7:hover {
+  
   border: double 4px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(#2c2c2c, #2c2c2c), radial-gradient(circle at top left, rgba(255,255,255,1) 0%, rgba(24,43,72,1) 9%, rgba(245,104,84,1) 34%));
+  background-image: linear-gradient(#2c2c2c, #2c2c2c), radial-gradient(circle at top left, rgba(255,255,255,1) 0%, rgba(24,43,72,1) 9%, rgba(245,104,84,1) 34%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
