@@ -75,6 +75,10 @@ function Home() {
               <a href="https://play.google.com/store/apps/details?id=com.stardom.dungeonslayer">
                 Android
               </a>
+              /
+              <a href="https://dsw.stardomga.me">
+              Web
+              </a>
             </span>
           </div>
         </span>
