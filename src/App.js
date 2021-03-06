@@ -11,6 +11,7 @@ export default function App() {
     <Router>
       <Switch>
         <Route exact path="/">
+        <Route path='/DSW/' component={SubData}>
           <Home />
         </Route>
       </Switch>
