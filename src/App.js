@@ -5,7 +5,7 @@ import {
   Route /*, Link*/
 } from "react-router-dom";
 import "./styles.css";
-
+import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 export default function App() {
   return (
     <Router>
