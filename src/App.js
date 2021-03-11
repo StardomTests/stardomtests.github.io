@@ -48,7 +48,7 @@ function Home() {
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
-          <h1 class="animate__animated animate__bounce">
+          <h1 class="animate__animated animate__fadeInDown">
             <img
               src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
               alt="logo"
