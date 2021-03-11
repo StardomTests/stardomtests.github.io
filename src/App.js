@@ -48,14 +48,16 @@ function Home() {
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
-          <img
-            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
-            alt="logo"
-            id="logo"
-            draggable="false"
-          ></img>
-        </span>
-      </div>
+          <h1 class="animate__animated animate__bounce">
+            <img
+              src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+              alt="logo"
+              id="logo"
+              draggable="false"
+              ></img>
+            </h1>
+          </span>
+        </div>
       <div className="airframe">
         <h1>Games</h1>
         <span id="hover" onClick={egg1}>
