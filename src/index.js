@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { unregister as unregisterServiceWorker } from './registerServiceWorker'
+import * as serviceWorker from "./serviceWorker";
+
 
 unregisterServiceWorker();
 
