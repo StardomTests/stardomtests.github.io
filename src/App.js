@@ -5,7 +5,7 @@ import {
   Route /*, Link*/
 } from "react-router-dom";
 import "./styles.css";
-import "./animate.min.css"
+
 export default function App() {
   return (
     <Router>
@@ -27,10 +27,10 @@ function Home() {
     setBG("rgba(0, 77, 194, 1)");
   }
   function egg2() {
-    setBG("rgb(0,255,3)");
+    setBG("rgba(10, 97, 17, 1)");
   }
   function egg3() {
-    setBG("rgb(0,255,3)");
+    setBG("#00ff87");
   }
   function egg4() {
     setBG("#d61e1e");
@@ -44,20 +44,21 @@ function Home() {
   function egg7() {
     setBG("#f96854");
   }
+  function egg8() {
+    setBG("#00ACEE");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
-          <h1 class="animate__animated animate__fadeInDown">
-            <img
-              src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
-              alt="logo"
-              id="logo"
-              draggable="false"
-              ></img>
-            </h1>
-          </span>
-        </div>
+          <img
+            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            alt="logo"
+            id="logo"
+            draggable="false"
+          ></img>
+        </span>
+      </div>
       <div className="airframe">
         <h1>Games</h1>
         <span id="hover" onClick={egg1}>
@@ -76,10 +77,6 @@ function Home() {
               /
               <a href="https://play.google.com/store/apps/details?id=com.stardom.dungeonslayer">
                 Android
-              </a>
-              /
-              <a href="https://dsw.stardomga.me">
-              Web
               </a>
             </span>
           </div>
@@ -153,6 +150,22 @@ function Home() {
             <span id="dscontent">
               Instagram -{" "}
               <a href="https://instagram.com/stardom.games">Follow!</a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg8}>
+          <div className="ds8">
+            <img
+              src="https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Twitter -{" "}
+              <a href="https://twitter.com/GamesStardom">Follow!</a>
             </span>
           </div>
         </span>
