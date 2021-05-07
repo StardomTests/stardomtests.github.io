@@ -151,7 +151,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Instagram -{" "}
+              Discord -{" "}
               <a href="https://discord.gg/CGqT9WX7sU">Join!</a>
             </span>
           </div>
