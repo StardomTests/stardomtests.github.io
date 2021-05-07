@@ -47,6 +47,9 @@ function Home() {
   function egg8() {
     setBG("#00ACEE");
   }
+  function egg9() {
+    setBG("#7289DA");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
@@ -134,6 +137,22 @@ function Home() {
               <a href="https://www.youtube.com/channel/UCgmh2uIuUPxIep-qJ2WOEbg">
                 Subscribe!
               </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg8}>
+          <div className="ds9">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/discord.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Instagram -{" "}
+              <a href="https://discord.gg/CGqT9WX7sU">Join!</a>
             </span>
           </div>
         </span>
