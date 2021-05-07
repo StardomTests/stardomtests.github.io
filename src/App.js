@@ -142,7 +142,7 @@ function Home() {
         </span>
         <br />
         <br />
-        <span id="hover" onClick={egg8}>
+        <span id="hover" onClick={egg9}>
           <div className="ds9">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/discord.png"
