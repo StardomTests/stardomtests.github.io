@@ -275,3 +275,26 @@ a {
 .ds8:hover {
   border: solid 4px #00ACEE;
 }
+
+.ds9 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds9:hover {
+  border: solid 4px #7289DA;
+}
