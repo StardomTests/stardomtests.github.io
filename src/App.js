@@ -78,7 +78,7 @@ function Home() {
       <div className="airframe">
         <h1>Games</h1>
         <span id="hover" onClick={egg10}>
-          <div className="ds1">
+          <div className="ds10">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png"
               alt="dslogo"
