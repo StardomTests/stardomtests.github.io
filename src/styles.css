@@ -322,7 +322,7 @@ a {
 .ds10:hover {
   border: double 4px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(#2c2c2c, #2c2c2c), radial-gradient(circle at bottom right, rgba(208,94,180,1) 0%, rgba(102,164,216,1) 25%, rgba(121,206,114,1) 50%, rgba(246,64,59,1) 75%);
+  background-image: linear-gradient(#2c2c2c, #2c2c2c), radial-gradient(circle at bottom right, rgba(208,94,180,1) 75%, rgba(102,164,216,1) 50%, rgba(121,206,114,1) 25%, rgba(246,64,59,1) 0%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
