@@ -78,8 +78,6 @@ function Home() {
       </div>
       <div className="airframe">
         <h1>Games</h1>
-      <div className="airframe">
-        <h1>Games</h1>
         <span id="hover" onClick={egg10}>
           <div className="ds1">
             <img
