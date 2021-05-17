@@ -50,7 +50,42 @@ function Home() {
   function egg9() {
     setBG("#7289DA");
   }
+  function egg10() {
+    setBG("#c66a3a");
+  }
   return (
+    <div className="body">
+      <div className="header" style={{ backgroundColor: bg }}>
+        <span onClick={egg}>
+          <img
+            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            alt="logo"
+            id="logo"
+            draggable="false"
+          ></img>
+        </span>
+      </div>
+      <div className="airframe">
+        <h1>Games</h1>
+        <span id="hover" onClick={egg10}>
+          <div className="ds1">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Perspective{" "}
+              <br />
+              -Coming Soon-
+              
+              
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
