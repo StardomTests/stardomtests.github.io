@@ -65,7 +65,6 @@ function Home() {
           ></img>
         </span>
       </div>
-        <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
           <img
@@ -254,7 +253,7 @@ function Home() {
           </div>
         </span>
         <br />
-      </div>
-    </div>
+        </div>
+        </div>
   );
 }
