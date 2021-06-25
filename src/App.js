@@ -88,7 +88,7 @@ function Home() {
             <span id="dscontent">
               Perspective{" "}
               <br />
-              <a href="perspective.stardomga.me">Download Beta!</a>
+              <a href="https://perspective.stardomga.me">Download Beta!</a>
               
               
             </span>
