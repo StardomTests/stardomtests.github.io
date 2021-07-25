@@ -259,7 +259,7 @@ function Home() {
         <span id="hover" onClick={egg11}>
           <div className="ds11">
             <img
-              src="https://www.logo.wine/a/logo/Reddit/Reddit-Logomark-White-Dark-Background-Logo.wine.svg"
+              src="https://cdn.fastly.picmonkey.com/content4/previews/social/social_54_550.webp"
               alt="abp2logo"
               id="dslogo"
             />
