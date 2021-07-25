@@ -265,10 +265,13 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Github - <a href="https://reddit.com/r/stardomgames">Join!</a>
+              Twitter -{" "}
+              <a href="https://reddit/com/r/stardomgames">Join!</a>
             </span>
           </div>
-         </span>
+        </span>
+        <br />
+        <br />
         </span>
         </div>
         </div>
