@@ -271,9 +271,8 @@ function Home() {
          </span>
         </span>
         </div>
-        </span>
         </div>
-        </div>
+        
         
         
 
