@@ -350,7 +350,7 @@ a {
 .ds11:hover {
   border: double 4px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(#ff4301, #ff4301), radial-gradient(circle at bottom right, rgba(208,94,180,1) 0%, rgba(102,164,216,1) 25%, rgba(121,206,114,1) 50%, rgba(246,64,59,1) 75%);
+  border: solid 4px #ff4301;
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
