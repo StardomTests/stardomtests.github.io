@@ -53,6 +53,9 @@ function Home() {
   function egg10() {
     setBG("#c66a3a");
   }
+  function egg11() {
+    setBG("#ff4301");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
