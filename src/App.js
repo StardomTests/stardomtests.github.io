@@ -270,7 +270,7 @@ function Home() {
           </div>
          </span>
         </span>
-        </span>
+        </div>
         </span>
         </div>
         </div>
