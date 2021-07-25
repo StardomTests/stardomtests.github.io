@@ -250,6 +250,7 @@ function Home() {
               Patreon -{" "}
               <a href="https://www.patreon.com/stardomgames">Donate!</a>
             </span>
+          </div>
         <span id="hover" onClick={egg7}>
           <div className="ds7">
             <img
@@ -264,9 +265,11 @@ function Home() {
             </span>
           </div>
         </span>
+        </span>
+        </div>
+        </div>
+        
+        
 
-        <br />
-        </div>
-        </div>
   );
 }
