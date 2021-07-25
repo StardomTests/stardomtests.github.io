@@ -256,8 +256,8 @@ function Home() {
           </div>
         <br />
         <br />
-        <span id="hover" onClick={egg7}>
-          <div className="ds7">
+        <span id="hover" onClick={egg11}>
+          <div className="ds11">
             <img
               src="https://www.logo.wine/a/logo/Reddit/Reddit-Logomark-White-Dark-Background-Logo.wine.svg"
               alt="abp2logo"
