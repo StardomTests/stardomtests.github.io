@@ -251,16 +251,18 @@ function Home() {
               <a href="https://www.patreon.com/stardomgames">Donate!</a>
             </span>
           </div>
+        <br />
+        <br />
         <span id="hover" onClick={egg7}>
           <div className="ds7">
             <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logo.wine%2Flogo%2FReddit&psig=AOvVaw0zwbRvXWqqaQr6aZy405re&ust=1627337428592000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNiq7L2e__ECFQAAAAAdAAAAABAD"
+              src="https://www.logo.wine/a/logo/Reddit/Reddit-Logomark-White-Dark-Background-Logo.wine.svg"
               alt="abp2logo"
               id="dslogo"
             />
             <br />
             <span id="dscontent">
-              Patreon -{" "}
+              Reddit -{" "}
               <a href="https://reddit.com/r/stardomgames">Join!</a>
             </span>
           </div>
