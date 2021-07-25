@@ -254,6 +254,7 @@ function Home() {
               <a href="https://www.patreon.com/stardomgames">Donate!</a>
             </span>
           </div>
+        </span>
         <br />
         <br />
         <span id="hover" onClick={egg11}>
