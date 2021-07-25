@@ -268,6 +268,7 @@ function Home() {
               Github - <a href="https://reddit.com/r/stardomgames">Join!</a>
             </span>
           </div>
+         </span>
         </span>
         </span>
         </span>
