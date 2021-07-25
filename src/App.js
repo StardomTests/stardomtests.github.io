@@ -250,10 +250,10 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Patreon -{" "}
-              <a href="https://www.patreon.com/stardomgames">Donate!</a>
+              Patreon - <a href="https://patreon.com/stardomgames">Donate!</a>
             </span>
           </div>
+        </span>
         <br />
         <br />
         <span id="hover" onClick={egg11}>
@@ -265,14 +265,13 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Twitter -{" "}
+              Reddit -{" "}
               <a href="https://reddit/com/r/stardomgames">Join!</a>
             </span>
           </div>
         </span>
         <br />
         <br />
-        </span>
         </div>
         </div>
         
