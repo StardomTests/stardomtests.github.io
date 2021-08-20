@@ -76,10 +76,18 @@ function Home() {
             id="logo"
             draggable="false"
           ></img>
+          <div className="text">
+            <span id="navbar">
+          <center>
+          <a href="#games">Games</a> | <a href="#socials">Social Media</a>
+          </center>
+          </span>
+          </div>
+          
         </span>
       </div>
       <div className="airframe">
-        <h1>Games</h1>
+        <h1><a id="games">Games</a></h1>
         <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
@@ -159,7 +167,7 @@ function Home() {
         <br />
         <br />
         <hr />
-        <h1>Socials</h1>
+        <h1><a id="socials">Socials</a></h1>
         <span id="hover" onClick={egg4}>
           <div className="ds4">
             <img
