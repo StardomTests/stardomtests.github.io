@@ -87,7 +87,7 @@ function Home() {
         </span>
       </div>
       <div className="airframe">
-        <h1><a id="games">Games</a></h1>
+        <h1><a href id="games">Games</a></h1>
         <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
@@ -167,7 +167,7 @@ function Home() {
         <br />
         <br />
         <hr />
-        <h1><a id="socials">Socials</a></h1>
+        <h1><a href id="socials">Socials</a></h1>
         <span id="hover" onClick={egg4}>
           <div className="ds4">
             <img
