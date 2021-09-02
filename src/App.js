@@ -78,16 +78,20 @@ function Home() {
           ></img>
           <div className="text">
             <span id="navbar">
-          <center>
-          <a href="#games">Games</a> | <a href="#socials">Social Media</a>
-          </center>
-          </span>
+              <center>
+                <a href="#games"> Games</a> |{" "}
+                <a href="#socials">Social Media</a>
+              </center>
+            </span>
           </div>
-          
         </span>
       </div>
       <div className="airframe">
-        <h1><a href id="games">Games</a></h1>
+        <h1>
+          <a href id="games">
+            Games
+          </a>
+        </h1>
         <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
@@ -97,11 +101,8 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Perspective{" "}
-              <br />
-              <a href="https://perspective.stardomga.me">Download Beta!</a>
-              
-              
+              Perspective Part 1<br />
+              <a href="https://perspective.stardomga.me">Download Beta!</a><br /> Full Release September 5th
             </span>
           </div>
         </span>
@@ -167,7 +168,11 @@ function Home() {
         <br />
         <br />
         <hr />
-        <h1><a href id="socials">Socials</a></h1>
+        <h1>
+          <a href id="socials">
+            Socials
+          </a>
+        </h1>
         <span id="hover" onClick={egg4}>
           <div className="ds4">
             <img
@@ -195,8 +200,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Discord -{" "}
-              <a href="https://discord.gg/CGqT9WX7sU">Join!</a>
+              Discord - <a href="https://discord.gg/CGqT9WX7sU">Join!</a>
             </span>
           </div>
         </span>
@@ -227,8 +231,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Twitter -{" "}
-              <a href="https://twitter.com/GamesStardom">Follow!</a>
+              Twitter - <a href="https://twitter.com/GamesStardom">Follow!</a>
             </span>
           </div>
         </span>
@@ -273,18 +276,13 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Reddit -{" "}
-              <a href="https://reddit/com/r/stardomgames">Join!</a>
+              Reddit - <a href="https://reddit/com/r/stardomgames">Join!</a>
             </span>
           </div>
         </span>
         <br />
         <br />
-        </div>
-        </div>
-        
-        
-        
-
+      </div>
+    </div>
   );
 }
