@@ -102,7 +102,8 @@ function Home() {
             <br />
             <span id="dscontent">
               Perspective Part 1<br />
-              <a href="https://perspective.stardomga.me">Download Beta!</a><br /> Full Release September 5th
+              <a href="https://perspective.stardomga.me">Download Now!</a>
+              <br />
             </span>
           </div>
         </span>
