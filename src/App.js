@@ -56,6 +56,9 @@ function Home() {
   function egg11() {
     setBG("#ff4301");
   }
+  function egg12() {
+    setBG("#7ed957");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
@@ -92,7 +95,22 @@ function Home() {
             Games
           </a>
         </h1>
-        <span id="hover" onClick={egg10}>
+        <span id="hover" onClick={egg12}>
+        <div className="ds12">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Green Square Adventures<br />
+              <a href="https://stardomgames.itch.io/green-square-adventures">Download on itch.io!</a>
+              <br />
+            </span>
+          </div>
+          <br />
+          <br />
           <div className="ds10">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective%202%20logo.png"
@@ -102,7 +120,6 @@ function Home() {
             <br />
             <span id="dscontent">
               Perspective Part 2<br />
-              
               Coming Soon!
               <br />
             </span>
