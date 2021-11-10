@@ -10,3 +10,7 @@ ReactDOM.render(
   </StrictMode>,
   rootElement
 );
+
+import { unregister as unregisterServiceWorker } from './serviceWorker.json'
+
+unregisterServiceWorker();
