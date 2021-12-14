@@ -74,7 +74,7 @@ function Home() {
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
           <img
-            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo.png"
             alt="logo"
             id="logo"
             draggable="false"
