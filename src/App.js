@@ -64,7 +64,7 @@ function Home() {
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
           <img
-            src="https://github.com/jordanreger/media/blob/main/stardomlogo.png?raw=true"
+            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo.png"
             alt="logo"
             id="logo"
             draggable="false"
@@ -148,7 +148,7 @@ function Home() {
         <span id="hover" onClick={egg1}>
           <div className="ds1">
             <img
-              src="https://raw.githubusercontent.com/jordanreger/media/main/Dungeon_Slayer_1.png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png"
               alt="dslogo"
               id="dslogo"
             />
