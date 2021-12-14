@@ -64,7 +64,7 @@ function Home() {
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
           <img
-            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo.png"
+            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
             id="logo"
             draggable="false"
@@ -74,7 +74,7 @@ function Home() {
       <div className="header" style={{ backgroundColor: bg }}>
         <span onClick={egg}>
           <img
-            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo.png"
+            src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
             id="logo"
             draggable="false"
