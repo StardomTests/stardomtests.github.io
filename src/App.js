@@ -109,6 +109,7 @@ function Home() {
               <br />
             </span>
           </div>
+          </span>
           <br />
           <br />
           <span id="hover" onClick={egg10}>
