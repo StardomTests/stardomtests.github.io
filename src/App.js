@@ -113,14 +113,14 @@ function Home() {
           <br />
           <div className="ds10">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective%202%20logo.png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
               alt="dslogo"
               id="dslogo"
             />
             <br />
             <span id="dscontent">
-              Perspective Part 2<br />
-              Coming Soon!
+              Project Paradox (Beta)<br />
+             <a href="https://perspective.stardomga.me">Download Now!</a>
               <br />
             </span>
           </div>
