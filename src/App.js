@@ -111,6 +111,7 @@ function Home() {
           </div>
           <br />
           <br />
+          <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
