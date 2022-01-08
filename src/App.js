@@ -120,8 +120,8 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Project Paradox (Beta)<br />
-             <a href="https://perspective.stardomga.me">Download Now!</a>
+              Perspective Part 1<br />
+              <a href="https://perspective.stardomga.me">Download Now!</a>
               <br />
             </span>
           </div>
