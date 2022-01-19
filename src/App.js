@@ -121,7 +121,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Perspective Part 1<br />
+              Project Paradox<br />
               <a href="https://perspective.stardomga.me">Download Now!</a>
               <br />
             </span>
