@@ -320,6 +320,8 @@ function Home() {
         </span>
         <br />
         <br />
+        <center>Jordan Trempert - stardomgames1@gmail.com
+      </center>
       </div>
     </div>
   );
