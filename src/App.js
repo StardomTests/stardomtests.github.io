@@ -95,21 +95,7 @@ function Home() {
             Games
           </a>
         </h1>
-        <span id="hover" onClick={egg12}>
-        <div className="ds12">
-            <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
-              alt="dslogo"
-              id="dslogo"
-            />
-            <br />
-            <span id="dscontent">
-              Green Square Adventures<br />
-              <a href="https://stardomgames.itch.io/green-square-adventures">Download on itch.io!</a>
-              <br />
-            </span>
-          </div>
-          </span>
+
           <br />
           <br />
           <span id="hover" onClick={egg10}>
@@ -127,6 +113,21 @@ function Home() {
             </span>
           </div>
         </span>
+        <span id="hover" onClick={egg12}>
+        <div className="ds12">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Green Square Adventures<br />
+              <a href="https://stardomgames.itch.io/green-square-adventures">Download on itch.io!</a>
+              <br />
+            </span>
+          </div>
+          </span>
         <br />
         <br />
         <span id="hover" onClick={egg10}>
