@@ -97,7 +97,7 @@ function Home() {
         </h1>
 
           <br />
-          <br />
+
           <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
@@ -113,6 +113,8 @@ function Home() {
             </span>
           </div>
         </span>
+          <br />
+                          <br />
         <span id="hover" onClick={egg12}>
         <div className="ds12">
             <img
