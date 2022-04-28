@@ -59,6 +59,9 @@ function Home() {
   function egg12() {
     setBG("#7ed957");
   }
+  function egg13() {
+    setBG("#57ba63");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
@@ -96,9 +99,9 @@ function Home() {
           </a>
         </h1>
 
-          <br />
+        <br />
 
-          <span id="hover" onClick={egg10}>
+        <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
@@ -107,16 +110,17 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Project Paradox<br />
+              Project Paradox
+              <br />
               <a href="https://perspective.stardomga.me">Download Now!</a>
               <br />
             </span>
           </div>
         </span>
-          <br />
-                          <br />
+        <br />
+        <br />
         <span id="hover" onClick={egg12}>
-        <div className="ds12">
+          <div className="ds12">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
               alt="dslogo"
@@ -124,12 +128,15 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Green Square Adventures<br />
-              <a href="https://stardomgames.itch.io/green-square-adventures">Download on itch.io!</a>
+              Green Square Adventures
+              <br />
+              <a href="https://stardomgames.itch.io/green-square-adventures">
+                Download on itch.io!
+              </a>
               <br />
             </span>
           </div>
-          </span>
+        </span>
         <br />
         <br />
         <span id="hover" onClick={egg10}>
@@ -214,6 +221,24 @@ function Home() {
             Socials
           </a>
         </h1>
+        <span id="hover" onClick={egg13}>
+          <div className="ds13">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/109018_media_512x512.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Spotify -{" "}
+              <a href="https://open.spotify.com/artist/1uyxMQspi38ZM4u2JNmWJY?si=M0mwiqwzTYOPohONQQSU5Q">
+                Follow!
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
         <span id="hover" onClick={egg4}>
           <div className="ds4">
             <img
@@ -323,9 +348,8 @@ function Home() {
         </span>
         <br />
         <br />
-        <center>Jordan Trempert - stardomgames1@gmail.com
-      </center>
-<br />
+        <center>Jordan Trempert - stardomgames1@gmail.com</center>
+        <br />
       </div>
     </div>
   );
