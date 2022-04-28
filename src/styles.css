@@ -381,7 +381,6 @@ a {
   background-clip: padding-box, border-box;
 }
 
-
 .ds12 {
   position: relative;
   background-color: rgba(255, 255, 255, 0.05);
@@ -409,3 +408,29 @@ a {
   background-clip: padding-box, border-box;
 }
 
+.ds13 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds13:hover {
+  border: double 4px transparent;
+  border-radius: 20px;
+  border: solid 4px #57ba63;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
