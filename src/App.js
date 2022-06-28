@@ -62,6 +62,9 @@ function Home() {
   function egg13() {
     setBG("#57ba63");
   }
+  function egg14() {
+    setBG("#FFFFFF");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
@@ -100,7 +103,24 @@ function Home() {
         </h1>
 
         <br />
-
+        <span id="hover" onClick={egg14}>
+          <div className="ds14">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+              alt="dslogo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Stardom Games Launcher
+              <br />
+              <a href="https://matix.li/cad9f283f589">Download Now!</a>
+              <br />
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
         <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
