@@ -132,7 +132,7 @@ function Home() {
             <span id="dscontent">
               Project Paradox
               <br />
-              <a href="https://perspective.stardomga.me">Download Now!</a>
+              <a href="https://stardomgames.itch.io/project-paradox">Download Now!</a>
               <br />
             </span>
           </div>
@@ -169,7 +169,7 @@ function Home() {
             <br />
             <span id="dscontent">
               Perspective Part 1<br />
-              <a href="https://perspective.stardomga.me">Download Now!</a>
+              <a href="https://stardomgames.itch.io/perspective-part-1">Download Now!</a>
               <br />
             </span>
           </div>
