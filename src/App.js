@@ -101,10 +101,8 @@ function Home() {
         <br />
         <br />
           <a href id="games">
-            -Games-
-          </a>
+            -Games- </a>
         </h1>
-
         <br />
         <span id="hover" onClick={egg14}>
           <div className="ds14">
