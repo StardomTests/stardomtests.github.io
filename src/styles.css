@@ -13,6 +13,7 @@ hr {
   left: 0;
   top: 0;
   color: #e0e0e0;
+  overflow-x:hidden;
 }
 
 .header {
