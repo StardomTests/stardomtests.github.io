@@ -103,6 +103,7 @@ function Home() {
         </h1>
 
         <br />
+        <br />
         <span id="hover" onClick={egg14}>
           <div className="ds14">
             <img
