@@ -14,6 +14,7 @@ hr {
   top: 0;
   color: #e0e0e0;
   overflow-x:hidden;
+  font-family: monospace;
 }
 
 .header {
@@ -32,6 +33,7 @@ hr {
 .text {
   text-align: center;
   padding-top: 45px;
+  font-family: monospace;
 
 
 }
