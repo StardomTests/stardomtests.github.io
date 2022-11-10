@@ -254,7 +254,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Spotify -{" "}
+              "Itch.io" -{" "}
               <a href="https://stardomgames.itch.io/">
                 Follow!
               </a>
