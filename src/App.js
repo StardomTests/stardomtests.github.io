@@ -248,13 +248,13 @@ function Home() {
         <span id="hover" onClick={egg15}>
           <div className="ds15">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/itchio.png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/itchy.png"
               alt="abp2logo"
               id="dslogo"
             />
             <br />
             <span id="dscontent">
-              "Itch.io" -{" "}
+              Itch.io - {" "}
               <a href="https://stardomgames.itch.io/">
                 Follow!
               </a>
