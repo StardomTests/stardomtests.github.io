@@ -66,7 +66,7 @@ function Home() {
     setBG("#FFFFFF");
   }
   function egg15() {
-  setBG("##ff5c5c");
+  setBG("#ff5c5c");
   }
   return (
     <div className="body">
