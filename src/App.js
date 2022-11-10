@@ -248,7 +248,7 @@ function Home() {
         <span id="hover" onClick={egg15}>
           <div className="ds15">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/itchy.png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/itch.png"
               alt="abp2logo"
               id="dslogo"
             />
