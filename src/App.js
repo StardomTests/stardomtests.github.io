@@ -65,6 +65,9 @@ function Home() {
   function egg14() {
     setBG("#FFFFFF");
   }
+  function egg15() {
+  setBG("##ff5c5c");
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
@@ -242,6 +245,24 @@ function Home() {
             -Socials-
           </a>
         </h1>
+        <span id="hover" onClick={egg14}>
+          <div className="ds14">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/109018_media_512x512.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Spotify -{" "}
+              <a href="https://stardomgames.itch.io/">
+                Follow!
+              </a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
         <span id="hover" onClick={egg13}>
           <div className="ds13">
             <img
