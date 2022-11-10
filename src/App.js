@@ -245,8 +245,8 @@ function Home() {
             -Socials-
           </a>
         </h1>
-        <span id="hover" onClick={egg14}>
-          <div className="ds14">
+        <span id="hover" onClick={egg15}>
+          <div className="ds15">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/109018_media_512x512.png"
               alt="abp2logo"
