@@ -138,6 +138,21 @@ function Home() {
         </span>
         <br />
         <br />
+          <span id="hover" onClick={egg6}>
+          <div className="ds6">
+            <img
+              src="https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true"
+              alt="abp2logo"
+              id="dslogo"
+            />
+            <br />
+            <span id="dscontent">
+              Github - <a href="https://stardomgames.itch.io/yaro">Download!</a>
+            </span>
+          </div>
+        </span>
+        <br />
+        <br />
         <span id="hover" onClick={egg10}>
           <div className="ds10">
             <img
