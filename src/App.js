@@ -288,7 +288,7 @@ function Home() {
             <br />
             <span id="dscontent">
               Spotify -{" "}
-              <a href="https://open.spotify.com/artist/1uyxMQspi38ZM4u2JNmWJY?si=M0mwiqwzTYOPohONQQSU5Q">
+              <a href="https://open.spotify.com/artist/1WQqvnEv8S9Bc37dqXvQbS?si=YzfOiVSKTEWWAnLdioV85w&utm_source=copy-link">
                 Follow!
               </a>
             </span>
