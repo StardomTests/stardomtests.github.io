@@ -116,9 +116,9 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Stardom Games Launcher
+              Stardom Gaming Universe Timeline
               <br />
-              <a href="https://matix.li/cad9f283f589">Download Now!</a>
+              <a href="https://sgu.stardomga.me">View Now!</a>
               <br />
             </span>
           </div>
