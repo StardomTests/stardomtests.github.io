@@ -75,7 +75,7 @@ function Home() {
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
-        <span onClick={egg} onClick={handleClick} style={{ cursor: cursor ? 'url("https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png"), auto' : 'auto' }}>
+        <span onClick={handleClick} style={{ cursor: cursor ? 'url("https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png"), auto' : 'auto' }}>
           <img
             src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
