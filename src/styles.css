@@ -20,7 +20,7 @@ hr {
 }
 
 .custom-cursor {
-    cursor: url('https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png'), auto;
+    pointer: url('https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png'), auto;
 }
 
 .header {
