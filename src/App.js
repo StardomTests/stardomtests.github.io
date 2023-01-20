@@ -19,6 +19,7 @@ export default function App() {
 }
 function Home() {
   const [bg, setBG] = useState("#000");
+  const [cursor, setCursor] = useState(false);
 
   function egg() {
     setBG("Black");
@@ -68,10 +69,13 @@ function Home() {
   function egg15() {
   setBG("#ff5c5c");
   }
+  function handleClick() {
+  setCursor(!cursor);
+  }
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
-        <span onClick={egg}>
+        <span onClick={egg} onClick={handleClick} style={{ cursor: cursor ? 'url("https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png"), auto' : 'auto' }}>
           <img
             src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
