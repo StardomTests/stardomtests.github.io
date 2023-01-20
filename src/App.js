@@ -70,8 +70,11 @@ function Home() {
   setBG("#ff5c5c");
   }
   function handleClick() {
-  setCursor(cursor);
+  if (!cursor) {
+    setCursor(true);
   }
+}
+
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
