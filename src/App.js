@@ -70,7 +70,7 @@ function Home() {
   setBG("#ff5c5c");
   }
   function handleClick() {
-  setCursor(!cursor);
+  setCursor(cursor);
   }
   return (
     <div className="body">
