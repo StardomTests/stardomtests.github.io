@@ -126,6 +126,7 @@ a {
     linear-gradient(90deg, rgba(0, 77, 194, 1), rgba(0, 77, 194, 1));
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds2 {
@@ -155,6 +156,7 @@ a {
     linear-gradient(90deg, rgba(10, 97, 17, 1), rgba(10, 97, 17, 1));
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds3 {
@@ -184,6 +186,7 @@ a {
     linear-gradient(90deg, #00ff87, #00ff87);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds4 {
@@ -213,6 +216,7 @@ a {
     linear-gradient(90deg, #d61e1e, #d61e1e);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds5 {
@@ -255,6 +259,7 @@ a {
     );
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds6 {
@@ -284,6 +289,7 @@ a {
     linear-gradient(90deg, #000, #000);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds7 {
@@ -313,6 +319,7 @@ a {
     linear-gradient(90deg, #f96854, #f96854);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 .ds8 {
   position: relative;
@@ -341,6 +348,7 @@ a {
     linear-gradient(90deg, #00acee, #00acee);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds9 {
@@ -370,6 +378,7 @@ a {
     linear-gradient(90deg, #7289da, #7289da);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds10 {
@@ -411,6 +420,7 @@ a {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   color: #000;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds11 {
@@ -442,6 +452,7 @@ a {
     linear-gradient(90deg, #ff4301, #ff4301);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds12 {
@@ -470,6 +481,7 @@ a {
     linear-gradient(90deg, #096523, #096523, #096523, #096523);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds13 {
@@ -498,6 +510,7 @@ a {
     linear-gradient(90deg, #57ba63, #57ba63, #57ba63, #57ba63);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 .ds14 {
   position: relative;
@@ -538,6 +551,7 @@ a {
   
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
 }
 
 .ds15 {
@@ -566,4 +580,11 @@ a {
     linear-gradient(90deg, #ff0000, #ff0000, #ff5c5c, #ff5c5c);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
 }
