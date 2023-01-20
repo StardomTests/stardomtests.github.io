@@ -17,6 +17,14 @@ export default function App() {
     </Router>
   );
 }
+
+function MyComponent() {
+  const [cursor, setCursor] = useState(false);
+
+  const handleClick = () => {
+    setCursor(!cursor);
+  };
+  
 function Home() {
   const [bg, setBG] = useState("#000");
 
@@ -71,7 +79,7 @@ function Home() {
   return (
     <div className="body">
       <div className="header" style={{ backgroundColor: bg }}>
-        <span onClick={egg}>
+        <span onClick={egg}, onClick={handleClick} style={{cursor: cursor ? 'url("https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png"), auto' : 'auto',}}>
           <img
             src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
