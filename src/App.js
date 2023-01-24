@@ -412,9 +412,11 @@ function Home() {
         </span>
         <br />
         <br />
+        <h1 class="animated-text">
         <center>Jordan Trempert - stardomgames1@gmail.com</center>
         <br />
-      </div>
+      </h1>
+    </div>
     </div>
   );
 }
