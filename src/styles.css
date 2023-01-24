@@ -6,7 +6,7 @@ hr {
 }
 @font-face {
   font-family: "Silkscreen"; /*a name to be used later*/
-  src: url('/public/fonts/slkscr.ttf') format('truetype');
+  src: url('/src/fonts/slkscr.ttf') format('truetype');
 
 }
 .body {
