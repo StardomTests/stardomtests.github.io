@@ -20,93 +20,71 @@ export default function App() {
 function Home() {
   const [bg, setBG] = useState("#000");
   const [textColor, setText] = useState("#FFFFFF");
-  const [bodyGradient, setGradientBg] = useState("#212121");
   const [cursor, setCursor] = useState(false);
 
   function egg() {
     setBG("Black");
-    setGradientBg(
-      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(33,33,33,1) 100%)"
-    );
     setText("white");
   }
   function egg1() {
     setBG("rgba(0, 77, 194, 1)");
-    setGradientBg(
-      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(0, 77, 194, 1) 100%)"
-    );
     setText("white");
   }
   function egg2() {
     setBG("rgba(10, 97, 17, 1)");
-    setGradientBg(
-      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(10, 97, 17, 1) 100%)"
-    );
     setText("White");
   }
   function egg3() {
     setBG("#00ff87");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #00ff87 100%)");
+
     setText("Black");
   }
   function egg4() {
     setBG("#d61e1e");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #d61e1e 100%)");
     setText("White");
   }
   function egg5() {
     setBG("#d62976");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #d62976 100%)");
     setText("black");
   }
   function egg6() {
     setBG("Black");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, Black 100%)");
     setText("White");
   }
   function egg7() {
     setBG("#f96854");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #f96854 100%)");
     setText("White");
   }
   function egg8() {
     setBG("#00ACEE");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #00ACEE 100%)");
     setText("White");
   }
   function egg9() {
     setBG("#7289DA");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #7289DA 100%)");
     setText("White");
   }
   function egg10() {
     setBG("#c66a3a");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #c66a3a 100%)");
     setText("White");
   }
   function egg11() {
     setBG("#ff4301");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #ff4301 100%)");
     setText("White");
   }
   function egg12() {
     setBG("#7ed957");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #7ed957 100%)");
     setText("White");
   }
   function egg13() {
     setBG("#57ba63");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #57ba63 100%)");
     setText("White");
   }
   function egg14() {
     setBG("#FFFFFF");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #FFFFFF 100%)");
     setText("White");
   }
   function egg15() {
     setBG("#ff5c5c");
-    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #ff5c5c 100%)");
     setText("White");
   }
   function handleClick() {
