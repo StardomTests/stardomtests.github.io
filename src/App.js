@@ -19,66 +19,89 @@ export default function App() {
 }
 function Home() {
   const [bg, setBG] = useState("#000");
+  const [bodyGradient, setGradientBg] = useState("#212121");
   const [cursor, setCursor] = useState(false);
 
   function egg() {
     setBG("Black");
+    setGradientBg(
+      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(33,33,33,1) 100%)"
+    );
   }
   function egg1() {
     setBG("rgba(0, 77, 194, 1)");
+    setGradientBg(
+      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(0, 77, 194, 1) 100%)"
+    );
   }
   function egg2() {
     setBG("rgba(10, 97, 17, 1)");
+    setGradientBg(
+      "linear-gradient(45deg, rgba(33,33,33,1) 85%, rgba(10, 97, 17, 1) 100%)"
+    );
   }
   function egg3() {
     setBG("#00ff87");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #00ff87 100%)");
   }
   function egg4() {
     setBG("#d61e1e");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #d61e1e 100%)");
   }
   function egg5() {
     setBG("#d62976");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #d62976 100%)");
   }
   function egg6() {
     setBG("Black");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, Black 100%)");
   }
   function egg7() {
     setBG("#f96854");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #f96854 100%)");
   }
   function egg8() {
     setBG("#00ACEE");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #00ACEE 100%)");
   }
   function egg9() {
     setBG("#7289DA");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #7289DA 100%)");
   }
   function egg10() {
     setBG("#c66a3a");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #c66a3a 100%)");
   }
   function egg11() {
     setBG("#ff4301");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #ff4301 100%)");
   }
   function egg12() {
     setBG("#7ed957");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #7ed957 100%)");
   }
   function egg13() {
     setBG("#57ba63");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #57ba63 100%)");
   }
   function egg14() {
     setBG("#FFFFFF");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #FFFFFF 100%)");
   }
   function egg15() {
-  setBG("#ff5c5c");
+    setBG("#ff5c5c");
+    setGradientBg("linear-gradient(45deg, rgba(33,33,33,1) 85%, #ff5c5c 100%)");
   }
   function handleClick() {
-  if (!cursor) {
-    setCursor(true);
+    if (!cursor) {
+      setCursor(true);
+    }
   }
-}
 
   return (
-    <div className="body">
+    <div className="body" style={{ background: bodyGradient }}>
       <div className="header" style={{ backgroundColor: bg }}>
-        <span className={cursor ? 'custom-cursor' : ''} onClick={handleClick}>
+        <span className={cursor ? "custom-cursor" : ""} onClick={handleClick}>
           <img
             src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
             alt="logo"
@@ -107,11 +130,12 @@ function Home() {
       </div>
       <div className="airframe">
         <h1>
-        <br />
-        <br />
-        <br />
+          <br />
+          <br />
+          <br />
           <a href id="games">
-            -Games- </a>
+            -Games-{" "}
+          </a>
         </h1>
         <br />
         <span id="hover" onClick={egg14}>
@@ -132,7 +156,7 @@ function Home() {
         </span>
         <br />
         <br />
-          <span id="hover" onClick={egg6}>
+        <span id="hover" onClick={egg6}>
           <div className="ds6">
             <img
               src="https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true"
@@ -141,7 +165,8 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Yet Another Rip-Off - <a href="https://stardomgames.itch.io/yaro">Download!</a>
+              Yet Another Rip-Off -{" "}
+              <a href="https://stardomgames.itch.io/yaro">Download!</a>
             </span>
           </div>
         </span>
@@ -158,7 +183,9 @@ function Home() {
             <span id="dscontent">
               Project Paradox
               <br />
-              <a href="https://stardomgames.itch.io/project-paradox">Download Now!</a>
+              <a href="https://stardomgames.itch.io/project-paradox">
+                Download Now!
+              </a>
               <br />
             </span>
           </div>
@@ -195,7 +222,9 @@ function Home() {
             <br />
             <span id="dscontent">
               Perspective Part 1<br />
-              <a href="https://stardomgames.itch.io/perspective-part-1">Download Now!</a>
+              <a href="https://stardomgames.itch.io/perspective-part-1">
+                Download Now!
+              </a>
               <br />
             </span>
           </div>
@@ -276,10 +305,7 @@ function Home() {
             />
             <br />
             <span id="dscontent">
-              Itch.io - {" "}
-              <a href="https://stardomgames.itch.io/">
-                Follow!
-              </a>
+              Itch.io - <a href="https://stardomgames.itch.io/">Follow!</a>
             </span>
           </div>
         </span>
@@ -413,10 +439,10 @@ function Home() {
         <br />
         <br />
         <h1 class="animated-text">
-        <center>Jordan Trempert - stardomgames1@gmail.com</center>
-        <br />
-      </h1>
-    </div>
+          <center>Jordan Trempert - stardomgames1@gmail.com</center>
+          <br />
+        </h1>
+      </div>
     </div>
   );
 }
