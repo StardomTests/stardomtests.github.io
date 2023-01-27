@@ -26,12 +26,9 @@ hr {
   font-family: "Silkscreen";
   text-align: center;
 }
-h1 {
-  background: -webkit-linear-gradient(45deg, #eee, #7a7a7a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Upheaval";
 
+h1 {
+  font-family: "Upheaval";
 }
 
 .custom-cursor {
