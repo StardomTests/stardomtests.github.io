@@ -17,76 +17,65 @@ export default function App() {
     </Router>
   );
 }
-function Home() {
+function Home(props) {
   const [bg, setBG] = useState("#000");
-  const [textColor, setText] = useState("#FFFFFF");
   const [cursor, setCursor] = useState(false);
+  let textColor;
+  if (bg === "Black") {
+    textColor = "white";
+  } else {
+    textColor = "black";
+  }
 
   function egg() {
     setBG("Black");
-    setText("white");
   }
   function egg1() {
     setBG("rgba(0, 77, 194, 1)");
-    setText("white");
   }
   function egg2() {
     setBG("rgba(10, 97, 17, 1)");
-    setText("White");
   }
   function egg3() {
     setBG("#00ff87");
-
-    setText("Black");
   }
   function egg4() {
     setBG("#d61e1e");
-    setText("White");
   }
   function egg5() {
     setBG("#d62976");
-    setText("black");
   }
   function egg6() {
     setBG("Black");
-    setText("White");
   }
   function egg7() {
     setBG("#f96854");
-    setText("White");
   }
   function egg8() {
     setBG("#00ACEE");
-    setText("White");
   }
   function egg9() {
     setBG("#7289DA");
-    setText("White");
   }
   function egg10() {
     setBG("#c66a3a");
-    setText("White");
   }
   function egg11() {
     setBG("#ff4301");
-    setText("White");
   }
   function egg12() {
     setBG("#7ed957");
-    setText("White");
   }
   function egg13() {
     setBG("#57ba63");
-    setText("White");
   }
   function egg14() {
     setBG("#FFFFFF");
-    setText("White");
   }
   function egg15() {
     setBG("#ff5c5c");
-    setText("White");
   }
+
   function handleClick() {
     if (!cursor) {
       setCursor(true);
@@ -95,7 +84,7 @@ function Home() {
 
   return (
     <div className="body">
-      <div className="header" style={{ backgroundColor: bg, color: textColor }}>
+      <div className="header" style={{ backgroundColor: bg }}>
         <span className={cursor ? "custom-cursor" : ""} onClick={handleClick}>
           <img
             src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
@@ -114,7 +103,7 @@ function Home() {
             draggable="false"
           ></img>
           <div className="text">
-            <span id="navbar">
+            <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> |{" "}
                 <a href="#socials">Social Media</a>
@@ -124,7 +113,7 @@ function Home() {
         </span>
       </div>
       <div className="airframe">
-        <h1>
+        <h1 style={{ color: bg }}>
           <br />
           <br />
           <br />
@@ -286,7 +275,7 @@ function Home() {
         <br />
         <br />
         <hr />
-        <h1>
+        <h1 style={{ color: bg }}>
           <a href id="socials">
             -Socials-
           </a>
