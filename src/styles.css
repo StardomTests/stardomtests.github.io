@@ -8,6 +8,11 @@ hr {
   font-family: "Silkscreen"; /*a name to be used later*/
   src: url("/src/fonts/slkscr.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Upheaval"; /*a name to be used later*/
+  src: url("/src/fonts/upheaval.ttf") format("truetype");
+}
+
 .body {
   background: #212121;
   width: 100%;
@@ -25,7 +30,8 @@ h1 {
   background: -webkit-linear-gradient(45deg, #eee, #7a7a7a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 24px;
+  font-family: "Upheaval";
+
 }
 
 .custom-cursor {
