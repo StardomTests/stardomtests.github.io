@@ -18,7 +18,7 @@ export default function App() {
   );
 }
 function Home(props) {
-  const [bg, setBG] = useState("#000");
+  const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
   let textColor;
   if (bg === "Black") {
@@ -112,8 +112,17 @@ function Home(props) {
           </div>
         </span>
       </div>
+      {/* text-shadow: 1.5px 1.5px 1.5px #ffffff, -1.5px -1.5px 1.5px #ffffff; */}
       <div className="airframe">
-        <h1 style={{ color: bg }}>
+        <h1
+          style={{
+            color: bg,
+            textShadow:
+              bg === "Black"
+                ? "-1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF"
+                : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
+          }}
+        >
           <br />
           <br />
           <br />
@@ -275,7 +284,15 @@ function Home(props) {
         <br />
         <br />
         <hr />
-        <h1 style={{ color: bg }}>
+        <h1
+          style={{
+            color: bg,
+            textShadow:
+              bg === "Black"
+                ? "-1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF"
+                : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
+          }}
+        >
           <a href id="socials">
             -Socials-
           </a>
