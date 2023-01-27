@@ -29,6 +29,7 @@ hr {
 
 h1 {
   font-family: "Upheaval";
+  letter-spacing: 2px;
 }
 
 .custom-cursor {
@@ -674,3 +675,4 @@ a {
     background-position: 0% 50%;
   }
 }
+
