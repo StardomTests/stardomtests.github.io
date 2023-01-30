@@ -43,7 +43,7 @@ function Home(props) {
   const [description6, setDescription6] = useState('Dungeon Slayer');
   const [description7, setDescription7] = useState('A Blocky Puzzle 2');
   const [description8, setDescription8] = useState('A Blocky Puzzle');
-  const [description9, setDescription9] = useState('Coming Soon');
+  const [description9, setDescription9] = useState('Project Multiverse');
 
   
   let textColor;
