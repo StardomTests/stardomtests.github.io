@@ -27,6 +27,11 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png": "Simple Rouge-like Dungeon Crawler",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png": "A Puzzle Game, Sequel to A Blocky Puzzle",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png": "A Simple Puzzle Platformer",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png": "Coming Soon",
+
+    
+
+
   };
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
@@ -38,6 +43,7 @@ function Home(props) {
   const [description6, setDescription6] = useState('Dungeon Slayer');
   const [description7, setDescription7] = useState('A Blocky Puzzle 2');
   const [description8, setDescription8] = useState('A Blocky Puzzle');
+  const [description9, setDescription9] = useState('Coming Soon');
 
   
   let textColor;
@@ -94,6 +100,9 @@ function Home(props) {
   }
   function egg15() {
     setBG("#ff5c5c");
+  }
+  function egg16() {
+    setBG("#C000FB");
   }
 
   function handleClick() {
@@ -163,6 +172,23 @@ function Home(props) {
         <br />
         <span id="dscontent">{description} <br />
         <a href="https://sgu.stardomga.me">View Now!</a>
+        </span>
+          </div>
+        </span>
+        <br />
+        <br />
+        <span id="hover" onClick={egg16}>
+          <div className="ds16">
+          <img
+          src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png"
+          alt="dslogo"
+          id="dslogo"
+          onMouseEnter={(e) => setDescription9(descriptions[e.target.src])}
+          onMouseLeave={() => setDescription9('Project Multiverse')}
+        />
+        <br />
+        <span id="dscontent">{description9} <br />
+        
         </span>
           </div>
         </span>
