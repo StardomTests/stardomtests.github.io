@@ -18,8 +18,28 @@ export default function App() {
   );
 }
 function Home(props) {
+  const descriptions = {
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png": "The Timeline For The Stardom Gaming Universe",
+    "https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true": "A Collection of Games Commonly Remade",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png": "Travel Through Different Worlds to Stop a Zombie Apocalypse",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png": "A Perfect Platformer With No Bugs",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png": "A Non-Euclidean Puzzle Game",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png": "Simple Rouge-like Dungeon Crawler",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png": "A Puzzle Game, Sequel to A Blocky Puzzle",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png": "A Simple Puzzle Platformer",
+  };
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
+  const [description, setDescription] = useState('Stardom Gaming Universe Timeline');
+  const [description2, setDescription2] = useState('Yet Another Rip-Off');
+  const [description3, setDescription3] = useState('Project Paradox');
+  const [description4, setDescription4] = useState('Green Square Adventures');
+  const [description5, setDescription5] = useState('Perspective Part 1');
+  const [description6, setDescription6] = useState('Dungeon Slayer');
+  const [description7, setDescription7] = useState('A Blocky Puzzle 2');
+  const [description8, setDescription8] = useState('A Blocky Puzzle');
+
+  
   let textColor;
   if (bg === "Black") {
     textColor = "white";
@@ -133,18 +153,17 @@ function Home(props) {
         <br />
         <span id="hover" onClick={egg14}>
           <div className="ds14">
-            <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
-              alt="dslogo"
-              id="dslogo"
-            />
-            <br />
-            <span id="dscontent">
-              Stardom Gaming Universe Timeline
-              <br />
-              <a href="https://sgu.stardomga.me">View Now!</a>
-              <br />
-            </span>
+          <img
+          src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+          alt="dslogo"
+          id="dslogo"
+          onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+          onMouseLeave={() => setDescription('Stardom Gaming Universe Timeline')}
+        />
+        <br />
+        <span id="dscontent">{description} <br />
+        <a href="https://sgu.stardomga.me">View Now!</a>
+        </span>
           </div>
         </span>
         <br />
@@ -155,10 +174,11 @@ function Home(props) {
               src="https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true"
               alt="abp2logo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription2(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription2('Yet Another Rip-Off')}
             />
             <br />
-            <span id="dscontent">
-              Yet Another Rip-Off -{" "}
+            <span id="dscontent">{description2} <br />
               <a href="https://stardomgames.itch.io/yaro">Download!</a>
             </span>
           </div>
@@ -171,10 +191,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
               alt="dslogo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription3(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription3('Project Paradox')}
             />
             <br />
-            <span id="dscontent">
-              Project Paradox
+            <span id="dscontent">{description3}
               <br />
               <a href="https://stardomgames.itch.io/project-paradox">
                 Download Now!
@@ -191,11 +212,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
               alt="dslogo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription4(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription4('Green Square Adventures')}
             />
             <br />
-            <span id="dscontent">
-              Green Square Adventures
-              <br />
+            <span id="dscontent">{description4} <br />
               <a href="https://stardomgames.itch.io/green-square-adventures">
                 Download on itch.io!
               </a>
@@ -211,10 +232,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png"
               alt="dslogo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription5(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription5('Perspective Part 1')}
             />
             <br />
-            <span id="dscontent">
-              Perspective Part 1<br />
+            <span id="dscontent">{description5} <br />
               <a href="https://stardomgames.itch.io/perspective-part-1">
                 Download Now!
               </a>
@@ -231,10 +253,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png"
               alt="dslogo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription6(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription6('Dungeon Slayer')}
             />
             <br />
-            <span id="dscontent">
-              Dungeon Slayer -{" "}
+            <span id="dscontent">{description6} <br />
               <a href="https://github.com/StardomGames/Dungeon-Slayer/releases">
                 Windows
               </a>
@@ -253,10 +276,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png"
               alt="abp2logo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription7(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription7('A Blocky Puzzle 2')}
             />
             <br />
-            <span id="dscontent">
-              A Blocky Puzzle 2 -{" "}
+            <span id="dscontent">{description7} <br />
               <a href="https://github.com/StardomGames/A-Blocky-Puzzle-2/releases">
                 Windows
               </a>
@@ -271,10 +295,11 @@ function Home(props) {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png"
               alt="abp2logo"
               id="dslogo"
+              onMouseEnter={(e) => setDescription8(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription8('A Blocky Puzzle')}
             />
             <br />
-            <span id="dscontent">
-              A Blocky Puzzle -{" "}
+            <span id="dscontent">{description8} <br />
               <a href="https://github.com/StardomGames/A-Blocky-Puzzle/releases">
                 Windows
               </a>
