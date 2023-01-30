@@ -639,6 +639,37 @@ a {
   transform: scale(1.1) rotate(2deg);
 }
 
+.ds16 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.ds16:hover {
+  border: double 4px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(-45deg, #C000FB, #D004BC),
+    linear-gradient(90deg, #C000FB, #C000FB, #D004BC, #D004BC);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: sway 2s ease-in-out infinite;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1) rotate(2deg);
+}
+
 @keyframes sway {
   0% {
     transform: rotate(2deg);
@@ -648,6 +679,18 @@ a {
   }
   100% {
     transform: rotate(2deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoom {
+  100% {
+    transform: scaleX(2) scaleY(2);
   }
 }
 
@@ -675,4 +718,3 @@ a {
     background-position: 0% 50%;
   }
 }
-
