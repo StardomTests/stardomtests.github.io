@@ -558,7 +558,7 @@ function Home(props) {
           <div className="ds8">
             <TiltBlock onHover={(id) => setHoveredId(id)}>
               <img
-                src="https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png"
+                src="https://raw.githubusercontent.com/jordan-trempert/media/main/twitter.png"
                 alt="abp2logo"
                 id="dslogo"
               />
