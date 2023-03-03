@@ -115,6 +115,7 @@ a {
 #dslogo {
   width: 4rem;
   border-radius: 10px;
+  -webkit-user-drag: none; /* Safari */
 }
 #dslogo:hover {
   filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
