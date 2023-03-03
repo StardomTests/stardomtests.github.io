@@ -78,7 +78,7 @@ function TiltBlock({ children }) {
 }
 
 function Home(props) {
-  const [hoveredId, setHoveredId] = useState(null);
+  const [setHoveredId] = useState(null);
   const descriptions = {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png":
       "The Timeline For The Stardom Gaming Universe",
