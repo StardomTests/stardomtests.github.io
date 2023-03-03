@@ -119,6 +119,7 @@ a {
 #dslogo:hover {
   filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .ds1 {
@@ -617,7 +618,8 @@ a {
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 150% 150%;
-  animation: sway 2s ease-in-out infinite, gradient-scroll 3s ease-in-out infinite;
+  animation: sway 2s ease-in-out infinite,
+    gradient-scroll 3s ease-in-out infinite;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
   transform: scale(1.1) rotate(2deg);
 }
@@ -676,8 +678,8 @@ a {
 .ds16:hover {
   border: double 4px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(-45deg, #C000FB, #D004BC),
-    linear-gradient(90deg, #C000FB, #C000FB, #D004BC, #D004BC);
+  background-image: linear-gradient(-45deg, #c000fb, #d004bc),
+    linear-gradient(90deg, #c000fb, #c000fb, #d004bc, #d004bc);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   background-size: 150% 150%;
@@ -740,12 +742,12 @@ a {
 
 @keyframes gradient-scroll {
   0% {
-  background-position: 0% 50%;
+    background-position: 0% 50%;
   }
   50% {
-  background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-  background-position: 0% 50%;
+    background-position: 0% 50%;
   }
-  }
+}
