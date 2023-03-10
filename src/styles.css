@@ -752,3 +752,15 @@ a {
     background-position: 0% 50%;
   }
 }
+
+
+
+#dsdiv {
+  display: inline-block;
+  flex-wrap: wrap;
+  width: 45%;
+  margin-inline: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
