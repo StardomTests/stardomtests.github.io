@@ -115,12 +115,13 @@ a {
 #dslogo {
   width: 4rem;
   border-radius: 10px;
-  -webkit-user-drag: none; /* Safari */
 }
 #dslogo:hover {
   filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
   transform: scale(1.1);
-  cursor: pointer;
+}
+
+#dsdiv {
 }
 
 .ds1 {
@@ -754,13 +755,21 @@ a {
 }
 
 
-
 #dsdiv {
-  display: inline-block;
-  flex-wrap: wrap;
-  width: 45%;
   margin-inline: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
+/* Styles for desktops */
+@media screen and (min-width: 768px) {
+  #dsdiv {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 45%;
+    margin-inline: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 
