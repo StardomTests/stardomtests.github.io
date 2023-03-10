@@ -428,7 +428,7 @@ function Home(props) {
         <span id="hover" onClick={egg8}>
           <div className="ds8" id="dsdiv">
             <img
-              src="https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png"
+              src="https://github.com/jordan-trempert/media/blob/main/twitter.png?raw=true"
               alt="abp2logo"
               id="dslogo"
             />
