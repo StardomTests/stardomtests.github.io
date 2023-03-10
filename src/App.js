@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,68 +17,7 @@ export default function App() {
     </Router>
   );
 }
-
-function TiltBlock({ children }) {
-  const [transformValue, setTransformValue] = useState("");
-  const tiltRef = useRef(null);
-
-  useEffect(() => {
-    const el = tiltRef.current;
-
-    const handleMove = (e) => {
-      const height = el.clientHeight;
-      const width = el.clientWidth;
-      const mouseX = e.clientX - el.getBoundingClientRect().left;
-      const mouseY = e.clientY - el.getBoundingClientRect().top;
-      const yRotation = 20 * ((mouseX - width / 2) / width);
-      const xRotation = -20 * ((mouseY - height / 2) / height);
-      const string =
-        "perspective(500px) scale(1.1) rotateX(" +
-        xRotation +
-        "deg) rotateY(" +
-        yRotation +
-        "deg)";
-      setTransformValue(string);
-    };
-
-    const handleMouseOut = () => {
-      setTransformValue("perspective(500px) scale(1) rotateX(0) rotateY(0)");
-    };
-
-    const handleMouseDown = () => {
-      setTransformValue("perspective(500px) scale(0.9) rotateX(0) rotateY(0)");
-    };
-
-    const handleMouseUp = () => {
-      setTransformValue("perspective(500px) scale(1.1) rotateX(0) rotateY(0)");
-    };
-
-    el.addEventListener("mousemove", handleMove);
-    el.addEventListener("mouseout", handleMouseOut);
-    el.addEventListener("mousedown", handleMouseDown);
-    el.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      el.removeEventListener("mousemove", handleMove);
-      el.removeEventListener("mouseout", handleMouseOut);
-      el.removeEventListener("mousedown", handleMouseDown);
-      el.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, []);
-
-  return (
-    <div
-      ref={tiltRef}
-      style={{ transform: transformValue }}
-      className="tilt-block"
-    >
-      {children}
-    </div>
-  );
-}
-
 function Home(props) {
-  const [setHoveredId] = useState(null);
   const descriptions = {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png":
       "The Timeline For The Stardom Gaming Universe",
@@ -228,18 +167,16 @@ function Home(props) {
         </h1>
         <br />
         <span id="hover" onClick={egg14}>
-          <div className="ds14">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
-                onMouseLeave={() =>
-                  setDescription("Stardom Gaming Universe Timeline")
-                }
-              />
-            </TiltBlock>
+          <div className="ds14" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription("Stardom Gaming Universe Timeline")
+              }
+            />
             <br />
             <span id="dscontent">
               {description} <br />
@@ -247,21 +184,16 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
+
         <span id="hover" onClick={egg16}>
-          <div className="ds16">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription9(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription9("Project Multiverse")}
-              />
-            </TiltBlock>
+          <div className="ds16" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription9(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription9("Project Multiverse")}
+            />
             <br />
             <span id="dscontent">
               {description9} <br />
@@ -271,21 +203,16 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
+
         <span id="hover" onClick={egg6}>
-          <div className="ds6">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true"
-                alt="abp2logo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription2(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription2("Yet Another Rip-Off")}
-              />
-            </TiltBlock>
+          <div className="ds6" id="dsdiv">
+            <img
+              src="https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true"
+              alt="abp2logo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription2(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription2("Yet Another Rip-Off")}
+            />
             <br />
             <span id="dscontent">
               {description2} <br />
@@ -293,21 +220,15 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg10}>
-          <div className="ds10">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription3(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription3("Project Paradox")}
-              />
-            </TiltBlock>
+          <div className="ds10" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription3(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription3("Project Paradox")}
+            />
             <br />
             <span id="dscontent">
               {description3}
@@ -319,21 +240,15 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg12}>
-          <div className="ds12">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription4(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription4("Green Square Adventures")}
-              />
-            </TiltBlock>
+          <div className="ds12" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Green%20Square%20Adventures.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription4(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription4("Green Square Adventures")}
+            />
             <br />
             <span id="dscontent">
               {description4} <br />
@@ -344,21 +259,15 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg10}>
-          <div className="ds10">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription5(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription5("Perspective Part 1")}
-              />
-            </TiltBlock>
+          <div className="ds10" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Perspective.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription5(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription5("Perspective Part 1")}
+            />
             <br />
             <span id="dscontent">
               {description5} <br />
@@ -369,22 +278,16 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
 
         <span id="hover" onClick={egg1}>
-          <div className="ds1">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png"
-                alt="dslogo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription6(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription6("Dungeon Slayer")}
-              />
-            </TiltBlock>
+          <div className="ds1" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Dungeon%20Slayer.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription6(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription6("Dungeon Slayer")}
+            />
             <br />
             <span id="dscontent">
               {description6} <br />
@@ -398,21 +301,15 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg2}>
-          <div className="ds2">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png"
-                alt="abp2logo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription7(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription7("A Blocky Puzzle 2")}
-              />
-            </TiltBlock>
+          <div className="ds2" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design.png"
+              alt="abp2logo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription7(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription7("A Blocky Puzzle 2")}
+            />
             <br />
             <span id="dscontent">
               {description7} <br />
@@ -422,21 +319,15 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg3}>
-          <div className="ds3">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png"
-                alt="abp2logo"
-                id="dslogo"
-                onMouseEnter={(e) =>
-                  setDescription8(descriptions[e.target.src])
-                }
-                onMouseLeave={() => setDescription8("A Blocky Puzzle")}
-              />
-            </TiltBlock>
+          <div className="ds3" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png"
+              alt="abp2logo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription8(descriptions[e.target.src])}
+              onMouseLeave={() => setDescription8("A Blocky Puzzle")}
+            />
             <br />
             <span id="dscontent">
               {description8} <br />
@@ -463,31 +354,25 @@ function Home(props) {
           </a>
         </h1>
         <span id="hover" onClick={egg15}>
-          <div className="ds15">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/itch.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds15" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/itch.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Itch.io - <a href="https://stardomgames.itch.io/">Follow!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg13}>
-          <div className="ds13">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/109018_media_512x512.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds13" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/109018_media_512x512.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Spotify -{" "}
@@ -497,17 +382,13 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg4}>
-          <div className="ds4">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/youtube.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds4" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/youtube.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               YouTube -{" "}
@@ -517,34 +398,26 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg9}>
-          <div className="ds9">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/discord.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds9" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/discord.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Discord - <a href="https://discord.gg/CGqT9WX7sU">Join!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg5}>
-          <div className="ds5">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds5" id="dsdiv">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Instagram -{" "}
@@ -552,76 +425,58 @@ function Home(props) {
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg8}>
-          <div className="ds8">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/twitter.png"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds8" id="dsdiv">
+            <img
+              src="https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Twitter - <a href="https://twitter.com/GamesStardom">Follow!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg6}>
-          <div className="ds6">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://github.com/jordan-trempert/media/blob/main/github.png?raw=true"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds6" id="dsdiv">
+            <img
+              src="https://github.com/jordan-trempert/media/blob/main/github.png?raw=true"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Github - <a href="https://github.com/stardomgames">Projects!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg7}>
-          <div className="ds7">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://raw.githubusercontent.com/jordan-trempert/media/main/patreon.jpg"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds7" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/patreon.jpg"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Patreon - <a href="https://patreon.com/stardomgames">Donate!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <span id="hover" onClick={egg11}>
-          <div className="ds11">
-            <TiltBlock onHover={(id) => setHoveredId(id)}>
-              <img
-                src="https://cdn.fastly.picmonkey.com/content4/previews/social/social_54_550.webp"
-                alt="abp2logo"
-                id="dslogo"
-              />
-            </TiltBlock>
+          <div className="ds11" id="dsdiv">
+            <img
+              src="https://cdn.fastly.picmonkey.com/content4/previews/social/social_54_550.webp"
+              alt="abp2logo"
+              id="dslogo"
+            />
             <br />
             <span id="dscontent">
               Reddit - <a href="https://reddit/com/r/stardomgames">Join!</a>
             </span>
           </div>
         </span>
-        <br />
-        <br />
         <h1 class="animated-text">
           <center>Jordan Trempert - stardomgames1@gmail.com</center>
           <br />
