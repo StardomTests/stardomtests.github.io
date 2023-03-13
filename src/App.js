@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Timeline } from "react-twitter-widgets";
 import {
   BrowserRouter as Router,
   Switch,
@@ -141,8 +142,7 @@ function Home(props) {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> |{" "}
-                <a href="#socials">Social Media</a> |{" "}
-                <a href="#apps">Apps</a>
+                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a>
               </center>
             </span>
           </div>
@@ -167,7 +167,6 @@ function Home(props) {
           </a>
         </h1>
         <br />
-        
 
         <span id="hover" onClick={egg16}>
           <div className="ds16" id="dsdiv">
@@ -474,7 +473,6 @@ function Home(props) {
           <a href id="apps">
             -Apps-
           </a>
-  
         </h1>
         <span id="hover" onClick={egg14}>
           <div className="ds14" id="dsdiv">
@@ -494,6 +492,36 @@ function Home(props) {
             </span>
           </div>
         </span>
+        <hr />
+        <h1
+          style={{
+            color: bg,
+            textShadow:
+              bg === "Black"
+                ? "-1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF"
+                : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
+          }}
+        >
+          <a href id="apps">
+            -Tweets-
+          </a>
+        </h1>
+        <center>
+          <div className="twitter">
+            <Timeline
+              dataSource={{
+                sourceType: "profile",
+                screenName: "GamesStardom"
+              }}
+              options={{
+                height: "400",
+                theme: "dark", // Replace 'dark' with 'light' or your custom theme color
+                chrome: "noheader nofooter noborders transparent noscrollbar", // Optional options to remove the header, footer, and borders
+                width: "75%"
+              }}
+            />
+          </div>
+        </center>
         <h1 class="animated-text">
           <center>Jordan Trempert - stardomgames1@gmail.com</center>
           <br />
