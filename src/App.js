@@ -141,7 +141,8 @@ function Home(props) {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> |{" "}
-                <a href="#socials">Social Media</a>
+                <a href="#socials">Social Media</a> |{" "}
+                <a href="#apps">Apps</a>
               </center>
             </span>
           </div>
@@ -166,24 +167,7 @@ function Home(props) {
           </a>
         </h1>
         <br />
-        <span id="hover" onClick={egg14}>
-          <div className="ds14" id="dsdiv">
-            <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
-              alt="dslogo"
-              id="dslogo"
-              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
-              onMouseLeave={() =>
-                setDescription("Stardom Gaming Universe Timeline")
-              }
-            />
-            <br />
-            <span id="dscontent">
-              {description} <br />
-              <a href="https://sgu.stardomga.me">View Now!</a>
-            </span>
-          </div>
-        </span>
+        
 
         <span id="hover" onClick={egg16}>
           <div className="ds16" id="dsdiv">
@@ -428,7 +412,7 @@ function Home(props) {
         <span id="hover" onClick={egg8}>
           <div className="ds8" id="dsdiv">
             <img
-              src="https://github.com/jordan-trempert/media/blob/main/twitter.png?raw=true"
+              src="https://bankimooncentre.org/wp-content/uploads/2020/05/twitter-icon-square-logo-108D17D373-seeklogo.com_.png"
               alt="abp2logo"
               id="dslogo"
             />
@@ -474,6 +458,39 @@ function Home(props) {
             <br />
             <span id="dscontent">
               Reddit - <a href="https://reddit/com/r/stardomgames">Join!</a>
+            </span>
+          </div>
+        </span>
+        <hr />
+        <h1
+          style={{
+            color: bg,
+            textShadow:
+              bg === "Black"
+                ? "-1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF"
+                : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
+          }}
+        >
+          <a href id="apps">
+            -Apps-
+          </a>
+  
+        </h1>
+        <span id="hover" onClick={egg14}>
+          <div className="ds14" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription("Stardom Gaming Universe Timeline")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description} <br />
+              <a href="https://sgu.stardomga.me">View Now!</a>
             </span>
           </div>
         </span>
