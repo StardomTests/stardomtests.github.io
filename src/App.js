@@ -142,7 +142,7 @@ function Home(props) {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> |{" "}
-                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a>
+                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a> | <a href="#tweets">Tweets</a>
               </center>
             </span>
           </div>
@@ -502,7 +502,7 @@ function Home(props) {
                 : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
           }}
         >
-          <a href id="apps">
+          <a href id="tweets">
             -Tweets-
           </a>
         </h1>
