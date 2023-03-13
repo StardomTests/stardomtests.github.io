@@ -26,15 +26,13 @@ hr {
   font-family: "Silkscreen";
   text-align: center;
   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default.png"),
-  auto;
+    auto;
 }
 
 h1 {
   font-family: "Upheaval";
   letter-spacing: 2px;
 }
-
-
 
 .header {
   position: fixed;
@@ -77,7 +75,7 @@ h1 {
 #navbar a:link:hover {
   font-size: 20px;
   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
-  auto;
+    auto;
 }
 
 /* width */
@@ -122,13 +120,11 @@ a {
 #dslogo:hover {
   filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
   transform: scale(1.1);
-
 }
 
-
-#dslogo{
+#dslogo {
   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
-  auto;
+    auto;
 }
 
 #dslogo:active {
@@ -148,9 +144,9 @@ a {
   }
 }
 
-#dsdiv a:link:hover{
+#dsdiv a:link:hover {
   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
-  auto;
+    auto;
 }
 
 .ds1 {
@@ -820,4 +816,14 @@ a {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+/* Target the body element of the Twitter widget */
+.twitter {
+  font-family: "Silkscreen" !important;
+}
+/* Target the header and footer elements of the Twitter widget */
+.EmbeddedTweet-header,
+.EmbeddedTweet-footer {
+  font-family: "Silkscreen" !important;
 }
