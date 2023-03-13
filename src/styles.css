@@ -25,6 +25,8 @@ hr {
   overflow-x: hidden;
   font-family: "Silkscreen";
   text-align: center;
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default.png"),
+  auto;
 }
 
 h1 {
@@ -32,10 +34,7 @@ h1 {
   letter-spacing: 2px;
 }
 
-.custom-cursor {
-  pointer: url("https://raw.githubusercontent.com/jordan-trempert/media/main/stardom_cursor.png"),
-    auto;
-}
+
 
 .header {
   position: fixed;
@@ -77,6 +76,8 @@ h1 {
 
 #navbar a:link:hover {
   font-size: 20px;
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
+  auto;
 }
 
 /* width */
@@ -115,13 +116,41 @@ a {
 #dslogo {
   width: 4rem;
   border-radius: 10px;
+  transition: transform 0.2s ease-out;
+  -webkit-user-drag: none;
 }
 #dslogo:hover {
   filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.5));
   transform: scale(1.1);
+
 }
 
-#dsdiv {
+
+#dslogo{
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
+  auto;
+}
+
+#dslogo:active {
+  transform: scale(1);
+  animation: pop 0.1s ease-out 1;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#dsdiv a:link:hover{
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_select.png"),
+  auto;
 }
 
 .ds1 {
@@ -754,13 +783,6 @@ a {
   }
 }
 
-
-#dsdiv {
-  margin-inline: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 /* Styles for desktops */
 @media screen and (min-width: 768px) {
   #dsdiv {
@@ -770,8 +792,32 @@ a {
     margin-inline: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
+#dsdiv {
+  margin-inline: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: pop-in 0.5s cubic-bezier(0.42, 0, 0.58, 1) 1;
+}
 
+#dsdiv:hover {
+  animation: sway 3s ease-in-out infinite alternate,
+    pop-in 0.5s cubic-bezier(0.42, 0, 0.58, 1) 1;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
