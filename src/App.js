@@ -142,7 +142,8 @@ function Home(props) {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> |{" "}
-                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a> | <a href="#tweets">Tweets</a>
+                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a> |{" "}
+                <a href="#tweets">Tweets</a>
               </center>
             </span>
           </div>
@@ -523,7 +524,11 @@ function Home(props) {
           </div>
         </center>
         <h1 class="animated-text">
-          <center>Jordan Trempert - stardomgames1@gmail.com</center>
+          <center>
+            <a href="https://mario.stardomga.me">
+              Jordan Trempert - stardomgames1@gmail.com
+            </a>
+          </center>
           <br />
         </h1>
       </div>
