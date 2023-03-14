@@ -753,7 +753,14 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 15px;
+
 }
+
+.animated-text a:link:hover{
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+  auto;
+}
+
 
 @keyframes gradient {
   0% {
