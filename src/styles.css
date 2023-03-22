@@ -47,6 +47,28 @@ h1 {
   opacity: 0.65;
 }
 
+.header #icon {
+  width: 18px;
+  position: relative;
+  top: 12px; /* adjust this value as needed */
+}
+
+@media screen and (min-width: 768px) {
+  .header #icon {
+    width: 18px;
+    position: relative;
+    top: 12px; /* adjust this value as needed */
+  }
+}
+
+.header #icon:hover {
+  width: 20px;
+}
+
+.header {
+  font-size: 32px;
+}
+
 .text {
   text-align: center;
   padding-top: 45px;
@@ -753,14 +775,12 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 15px;
-
 }
 
-.animated-text a:link:hover{
+.animated-text a:link:hover {
   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
-  auto;
+    auto;
 }
-
 
 @keyframes gradient {
   0% {
