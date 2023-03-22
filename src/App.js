@@ -141,9 +141,15 @@ function Home(props) {
           <div className="text">
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
-                <a href="#games"> Games</a> |{" "}
-                <a href="#socials">Social Media</a> | <a href="#apps">Apps</a> |{" "}
-                <a href="#tweets">Tweets</a>
+                <a href="#games"> Games</a> | <a href="#socials">Socials</a> |{" "}
+                <a href="#apps">Apps</a> | <a href="#tweets">Tweets</a> |{" "}
+                <a href="https://www.redbubble.com/people/stardom-games/works/142818683-stardom-games-merch?asc=u">
+                  <img
+                    id="icon"
+                    alt="tweets"
+                    src="https://github.com/jordan-trempert/media/blob/main/merch1.png?raw=true"
+                  ></img>
+                </a>
               </center>
             </span>
           </div>
