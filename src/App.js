@@ -37,7 +37,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/ABP.png":
       "A Simple Puzzle Platformer",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png":
-      "In Alpha"
+      "In Alpha",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
+      "Become an Amazing Kurger Bing Employee!"
   };
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
@@ -52,6 +54,9 @@ function Home(props) {
   const [description7, setDescription7] = useState("A Blocky Puzzle 2");
   const [description8, setDescription8] = useState("A Blocky Puzzle");
   const [description9, setDescription9] = useState("Project Multiverse");
+  const [description10, setDescription10] = useState(
+    "Kurger Bing Heat'n it up Simulator:..."
+  );
 
   let textColor;
   if (bg === "Black") {
@@ -110,6 +115,9 @@ function Home(props) {
   }
   function egg16() {
     setBG("#C000FB");
+  }
+  function egg17() {
+    setBG("#f29530");
   }
 
   function handleClick() {
@@ -174,6 +182,27 @@ function Home(props) {
           </a>
         </h1>
         <br />
+
+        <span id="hover" onClick={egg17}>
+          <div className="ds17" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription10(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription10("Kurger Bing Heat'n it up Simulator:...")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description10} <br />
+              <a href="https://stardomgames.itch.io/kurger-bing-heatn-it-up-simulator-2023-remastered-remix-ultimate-special-edition">
+                Download!
+              </a>
+            </span>
+          </div>
+        </span>
 
         <span id="hover" onClick={egg16}>
           <div className="ds16" id="dsdiv">
