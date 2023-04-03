@@ -39,7 +39,7 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png":
       "In Alpha",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
-      "Become an Amazing Kurger Bing Employee!"
+      "Become an Amazing Kurger Bing Employee! (April Fools Game)"
   };
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
