@@ -16,7 +16,7 @@ hr {
 .body {
   background-image: url("https://raw.githubusercontent.com/jordan-trempert/media/main/stars.png");
   background-attachment: local;
-
+  background-color: black;
   width: 100%;
   height: 100%;
   position: fixed;
