@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Timeline } from "react-twitter-widgets";
 import {
   BrowserRouter as Router,
@@ -7,7 +7,28 @@ import {
 } from "react-router-dom";
 import "./styles.css";
 
-export default function App() {
+export default function App({ props }) {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrollPosition(window.pageYOffset);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const animationDuration = 60 - scrollPosition / 50;
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--animation-duration",
+      `${animationDuration}s`
+    );
+  }, [animationDuration]);
   return (
     <Router>
       <Switch>
@@ -39,7 +60,7 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png":
       "In Alpha",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
-      "Become an Amazing Kurger Bing Employee! (April Fools Game)"
+      "Become an Amazing Kurger Bing Employee!"
   };
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
@@ -64,6 +85,22 @@ function Home(props) {
   } else {
     textColor = "black";
   }
+
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth() + 1}`;
+  const starsUrl =
+    "url('https://raw.githubusercontent.com/jordan-trempert/media/main/stars.png')";
+  const candyUrl =
+    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/src/candy.png')";
+  const [bgPic, setBgPic] = useState(candyUrl);
+  console.log(date);
+  useEffect(() => {
+    if (date === "25/12") {
+      setBgPic(candyUrl);
+    } else {
+      setBgPic(starsUrl);
+    }
+  }, [date, starsUrl, candyUrl]);
 
   function egg() {
     setBG("Black");
@@ -127,7 +164,7 @@ function Home(props) {
   }
 
   return (
-    <div className="body">
+    <div className="body" style={{ backgroundImage: bgPic }}>
       <div className="header" style={{ backgroundColor: bg }}>
         <span className={cursor ? "custom-cursor" : ""} onClick={handleClick}>
           <img
