@@ -92,11 +92,32 @@ function Home(props) {
     "url('https://raw.githubusercontent.com/jordan-trempert/media/main/stars.png')";
   const candyUrl =
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/src/candy.png')";
-  const [bgPic, setBgPic] = useState(candyUrl);
+  const pumpkinsUrl =
+    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/pumps.png')";
+  const heartsUrl =
+    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/Valhearts.png')";
+  const cloversUrl =
+    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/clover.png')";
+  const birthdayUrl =
+    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/birthday.jpg')";
+
+  const [bgPic, setBgPic] = useState(starsUrl);
   console.log(date);
   useEffect(() => {
     if (date === "25/12") {
       setBgPic(candyUrl);
+    }
+    if (date === "31/10") {
+      setBgPic(pumpkinsUrl);
+    }
+    if (date === "14/2") {
+      setBgPic(heartsUrl);
+    }
+    if (date === "17/3") {
+      setBgPic(cloversUrl);
+    }
+    if (date === "1/9") {
+      setBgPic(birthdayUrl);
     } else {
       setBgPic(starsUrl);
     }
