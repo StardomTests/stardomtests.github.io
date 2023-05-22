@@ -75,10 +75,12 @@ function Home(props) {
       return;
     }
     setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
-    if (konamiCodeIndex + 1 === konamiCode.length) {
+
+    if (konamiCodeIndex + 2 === konamiCode.length) { // Updated condition here
       window.location.href = 'https://mario.stardomga.me/';
     }
   }, [konamiCodeIndex]);
+
 
   useEffect(() => {
     window.addEventListener('keydown', checkKonamiCode);
