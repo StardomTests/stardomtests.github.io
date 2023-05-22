@@ -76,9 +76,9 @@ function Home(props) {
     }
     setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
 
-    if (konamiCodeIndex + 2 === konamiCode.length) {
-      window.location.href = 'https://mario.stardomga.me/';
-    }
+   if (konamiCodeIndex + 1 === konamiCode.length) {
+    window.location.href = 'https://mario.stardomga.me/';
+}
   }, [konamiCodeIndex]);
 
   useEffect(() => {
