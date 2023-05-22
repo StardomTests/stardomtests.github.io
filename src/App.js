@@ -62,6 +62,27 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
       "Become an Amazing Kurger Bing Employee!"
   };
+  const [konamiCodeIndex, setKonamiCodeIndex] = useState(0);
+
+  const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+
+  const checkKonamiCode = (event) => {
+    if (event.key !== konamiCode[konamiCodeIndex]) {
+      setKonamiCodeIndex(0);
+      return;
+    }
+    setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
+    if (konamiCodeIndex + 1 === konamiCode.length) {
+      window.location.href = 'https://mario.stardomga.me/';
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', checkKonamiCode);
+    return () => {
+      window.removeEventListener('keydown', checkKonamiCode);
+    };
+  }, [konamiCodeIndex]);
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
   const [description, setDescription] = useState(
