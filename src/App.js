@@ -40,11 +40,12 @@ export default function App({ props }) {
     </Router>
   );
 }
+
+const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'Enter']; // Define Konami code here
 function Home(props) {
   
-   const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'Enter']; // Define Konami code here
-  const [konamiCodeIndex, setKonamiCodeIndex] = useState(0); // Initialize Konami code index here
-
+   
+  const [konamiCodeIndex, setKonamiCodeIndex] = useState(0);
   const descriptions = {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png":
       "The Timeline For The Stardom Gaming Universe",
@@ -84,7 +85,7 @@ function Home(props) {
     return () => {
       window.removeEventListener('keydown', checkKonamiCode);
     };
-  }, [konamiCodeIndex, checkKonamiCode]);
+  }, [checkKonamiCode]);
   
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
