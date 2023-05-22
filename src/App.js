@@ -41,6 +41,10 @@ export default function App({ props }) {
   );
 }
 function Home(props) {
+  
+   const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'Enter']; // Define Konami code here
+  const [konamiCodeIndex, setKonamiCodeIndex] = useState(0); // Initialize Konami code index here
+
   const descriptions = {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png":
       "The Timeline For The Stardom Gaming Universe",
@@ -65,22 +69,22 @@ function Home(props) {
   };
   
   const checkKonamiCode = useCallback((event) => {
-  if (event.key !== konamiCode[konamiCodeIndex]) {
-    setKonamiCodeIndex(0);
-    return;
-  }
-  setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
-  if (konamiCodeIndex + 1 === konamiCode.length) {
-    window.location.href = 'https://mario.stardomga.me/';
-  }
-}, [konamiCodeIndex]);
+    if (event.key !== konamiCode[konamiCodeIndex]) {
+      setKonamiCodeIndex(0);
+      return;
+    }
+    setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
+    if (konamiCodeIndex + 1 === konamiCode.length) {
+      window.location.href = 'https://mario.stardomga.me/';
+    }
+  }, [konamiCodeIndex]);
 
-useEffect(() => {
-  window.addEventListener('keydown', checkKonamiCode);
-  return () => {
-    window.removeEventListener('keydown', checkKonamiCode);
-  };
-}, [konamiCodeIndex, checkKonamiCode]);
+  useEffect(() => {
+    window.addEventListener('keydown', checkKonamiCode);
+    return () => {
+      window.removeEventListener('keydown', checkKonamiCode);
+    };
+  }, [konamiCodeIndex, checkKonamiCode]);
   
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
