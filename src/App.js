@@ -41,7 +41,7 @@ export default function App({ props }) {
   );
 }
 
-const konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a', 'Enter']; // Define Konami code here
+const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter']; // Define Konami code here
 function Home(props) {
   
    
@@ -70,17 +70,16 @@ function Home(props) {
   };
   
   const checkKonamiCode = useCallback((event) => {
-    if (event.key !== konamiCode[konamiCodeIndex]) {
+    if (event.key.toLowerCase() !== konamiCode[konamiCodeIndex].toLowerCase()) {
       setKonamiCodeIndex(0);
       return;
     }
     setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
 
-    if (konamiCodeIndex + 2 === konamiCode.length) { // Updated condition here
+    if (konamiCodeIndex + 2 === konamiCode.length) {
       window.location.href = 'https://mario.stardomga.me/';
     }
   }, [konamiCodeIndex]);
-
 
   useEffect(() => {
     window.addEventListener('keydown', checkKonamiCode);
@@ -88,6 +87,7 @@ function Home(props) {
       window.removeEventListener('keydown', checkKonamiCode);
     };
   }, [checkKonamiCode]);
+
   
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
