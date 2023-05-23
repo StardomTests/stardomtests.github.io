@@ -81,13 +81,15 @@ const checkKonamiCode = useCallback((event) => {
     const randomNumber = Math.random();
     let redirectUrl;
 
-    if (randomNumber < 0.25) {
+    if (randomNumber < 0.2) {
       redirectUrl = 'https://pong.stardomga.me';
-    } else if (randomNumber < 0.5) {
+    } else if (randomNumber < 0.4) {
       redirectUrl = 'https://stardle.stardomga.me';
-    } else if (randomNumber < 0.75) {
+    } else if (randomNumber < 0.6) {
       redirectUrl = 'https://mario.stardomga.me';
-    } else {
+    } else if (randomNumber < 0.8) {
+      redirectUrl = 'https://tetris.stardomga.me';
+      else {
       redirectUrl = 'https://snake.stardomga.me';
     }
 
