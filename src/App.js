@@ -95,7 +95,7 @@ const checkKonamiCode = useCallback((event) => {
 
     window.location.href = redirectUrl;
   }
-}, [konamiCodeIndex, konamiCode]); // Include konamiCode as a dependency
+}, [konamiCodeIndex]);
 
 
 
