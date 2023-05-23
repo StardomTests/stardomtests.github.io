@@ -69,17 +69,24 @@ function Home(props) {
       "Become an Amazing Kurger Bing Employee!"
   };
   
-  const checkKonamiCode = useCallback((event) => {
-    if (event.key.toLowerCase() !== konamiCode[konamiCodeIndex].toLowerCase()) {
-      setKonamiCodeIndex(0);
-      return;
-    }
-    setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
+const checkKonamiCode = useCallback((event) => {
+  if (event.key.toLowerCase() !== konamiCode[konamiCodeIndex].toLowerCase()) {
+    setKonamiCodeIndex(0);
+    return;
+  }
+  
+  setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
 
-   if (konamiCodeIndex + 1 === konamiCode.length) {
-    window.location.href = 'https://mario.stardomga.me/';
-}
-  }, [konamiCodeIndex]);
+  if (konamiCodeIndex + 1 === konamiCode.length) {
+    const randomNumber = Math.random();
+    const redirectUrl =
+      randomNumber < 0.5
+        ? 'https://stardle.stardomga.me'
+        : 'https://mario.stardomga.me';
+    window.location.href = redirectUrl;
+  }
+}, [konamiCodeIndex]);
+
 
   useEffect(() => {
     window.addEventListener('keydown', checkKonamiCode);
