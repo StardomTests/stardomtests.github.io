@@ -89,13 +89,13 @@ const checkKonamiCode = useCallback((event) => {
       redirectUrl = 'https://mario.stardomga.me';
     } else if (randomNumber < 0.8) {
       redirectUrl = 'https://tetris.stardomga.me';
-      else {
+    } else {
       redirectUrl = 'https://snake.stardomga.me';
     }
 
     window.location.href = redirectUrl;
   }
-}, [konamiCodeIndex]);
+}, [konamiCodeIndex, konamiCode]); // Include konamiCode as a dependency
 
 
 
