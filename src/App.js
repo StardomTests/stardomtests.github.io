@@ -74,23 +74,25 @@ const checkKonamiCode = useCallback((event) => {
     setKonamiCodeIndex(0);
     return;
   }
-  
+
   setKonamiCodeIndex((prevKonamiCodeIndex) => prevKonamiCodeIndex + 1);
 
   if (konamiCodeIndex + 1 === konamiCode.length) {
-  const randomNumber = Math.random();
-  let redirectUrl;
+    const randomNumber = Math.random();
+    let redirectUrl;
 
-  if (randomNumber < 0.33) {
-    redirectUrl = 'https://stardle.stardomga.me';
-  } else if (randomNumber < 0.67) {
-    redirectUrl = 'https://mario.stardomga.me';
-  } else {
-    redirectUrl = 'https://pong.stardomga.me';
+    if (randomNumber < 0.3) {
+      redirectUrl = 'https://pong.stardomga.me';
+    } else if (randomNumber < 0.6) {
+      redirectUrl = 'https://stardle.stardomga.me';
+    } else {
+      redirectUrl = 'https://mario.stardomga.me';
+    }
+
+    window.location.href = redirectUrl;
   }
-
-  window.location.href = redirectUrl;
 }, [konamiCodeIndex]);
+
 
 
   useEffect(() => {
