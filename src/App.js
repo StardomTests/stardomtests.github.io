@@ -166,7 +166,7 @@ const checkKonamiCode = useCallback((event) => {
     if (date === "1/9") {
       setBgPic(birthdayUrl);
     }
-    if (date === "8/7") {
+    if (date === "4/7") {
       setBgPic(julyUrl);
     }
     else {
