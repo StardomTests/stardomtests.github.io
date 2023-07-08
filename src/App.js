@@ -146,7 +146,7 @@ const checkKonamiCode = useCallback((event) => {
   const birthdayUrl =
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/birthday.jpg')";
   const julyUrl =
-    "url('https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design%20(2).png')";
+    "url('https://raw.githubusercontent.com/jordan-trempert/media/main/July.png')";
 
   const [bgPic, setBgPic] = useState(starsUrl);
   console.log(date);
