@@ -145,6 +145,8 @@ const checkKonamiCode = useCallback((event) => {
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/clover.png')";
   const birthdayUrl =
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/birthday.jpg')";
+  const julyUrl =
+    "url('https://raw.githubusercontent.com/jordan-trempert/media/main/Untitled%20design%20(2).png')";
 
   const [bgPic, setBgPic] = useState(starsUrl);
   console.log(date);
@@ -163,7 +165,11 @@ const checkKonamiCode = useCallback((event) => {
     }
     if (date === "1/9") {
       setBgPic(birthdayUrl);
-    } else {
+    }
+    if (date === "8/7") {
+      setBgPic(julyUrl);
+    }
+    else {
       setBgPic(starsUrl);
     }
   }, [date, starsUrl, candyUrl]);
