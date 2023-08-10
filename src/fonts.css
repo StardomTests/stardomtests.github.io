@@ -5,3 +5,198 @@
     font-style: normal;
     font-display: block;
 }
+
+
+
+.user_page .header .image_header img{
+padding: 1rem;
+}
+
+#catch {
+  position: fixed;
+  z-index: 6;
+  color: #e0e0e0;
+}
+
+.body {
+  background: #000000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  color: #e0e0e0;
+  z-index: 10;
+  overflow-x: hidden;
+  font-family: monospace;
+  align-content: center;
+  background-image: url("https://raw.githubusercontent.com/jordan-trempert/media/main/stars.png");
+
+}
+
+
+#wrapper{
+   cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+}
+.game_grid_widget .game_cell .game_title a.title {
+text-align: center;
+animation: bgscroll 20s linear infinite;
+}
+
+@keyframes bgscroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -2000px;
+  }
+}
+
+.text {
+  text-align: center;
+  padding-top: 45px;
+  font-family: Silkscreen;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 5px;
+}
+
+.game_grid_widget .game_cell .game_thumb{
+  position: relative;
+ background-color: rgba(255, 255, 255, 0.05);
+  border: solid 4px black;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  border-radius: 20px;
+  text-align: center;
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+
+}
+.game_grid_widget .game_cell .game_thumb img{
+width: 8rem;
+  border-radius: 10px;
+padding: 2rem;
+margin-left: 33%;
+  border: solid 4px rgba(0, 77, 194, 1);
+  border: double 4px transparent;
+height: 250px;
+width: 250px;
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+
+
+
+}
+
+.user_page .text_header{
+text-align: center;
+
+
+
+}
+
+.user_page .user_links{
+text-align: center;
+}
+.game_grid_widget .game_cell .game_text, .game_grid_widget .game_cell .game_author{
+text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title{
+text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget .game_cell .game_title a.title {
+    text-align: center;
+}
+.game_grid_widget{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.game_grid_widget .game_cell .game_thumb img:hover {
+  border: solid 4px rgba(0, 0, 0, 1);
+  border: double 4px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+
+.footer{
+position: relative;
+visibility: hidden; 
+}
+
+
+
+.thumb_link .game_link{
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+}
+
+
+
+a:link:hover{
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+}
+}
+
+* {
+  cursor: url("https://raw.githubusercontent.com/jordan-trempert/media/main/cursor_default1.png"),
+    auto;
+}
+}
+
+.title .game_link {
+
+  font-family: "Silkscreen";}
