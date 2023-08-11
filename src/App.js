@@ -144,8 +144,6 @@ const checkKonamiCode = useCallback((event) => {
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/Valhearts.png')";
   const cloversUrl =
     "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/clover.png')";
-  const birthdayUrl =
-    "url('https://raw.githubusercontent.com/StardomTests/stardomtests.github.io/main/birthday.jpg')";
   const julyUrl =
     "url('https://raw.githubusercontent.com/jordan-trempert/media/main/July.png')";
 
@@ -299,9 +297,9 @@ const checkKonamiCode = useCallback((event) => {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png"
               alt="dslogo"
               id="dslogo"
-              onMouseEnter={(e) => setDescription10(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription11(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription10("Parachute Fall")
+                setDescription11("Parachute Fall")
               }
             />
             <br />
