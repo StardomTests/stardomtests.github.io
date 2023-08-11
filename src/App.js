@@ -66,7 +66,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Multiverse%20Icon.png":
       "In Alpha",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
-      "Become an Amazing Kurger Bing Employee!"
+      "Become an Amazing Kurger Bing Employee!",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png":
+      "Fall and Avoid Bombs! (Suggested on Mobile)"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -120,9 +122,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description7, setDescription7] = useState("A Blocky Puzzle 2");
   const [description8, setDescription8] = useState("A Blocky Puzzle");
   const [description9, setDescription9] = useState("Project Multiverse");
-  const [description10, setDescription10] = useState(
-    "Kurger Bing Heat'n it up Simulator:..."
-  );
+  const [description10, setDescription10] = useState("Kurger Bing Heat'n it up Simulator:...");
+  const [description11, setDescription11] = useState("Parachute Fall");
 
   let textColor;
   if (bg === "Black") {
@@ -162,9 +163,6 @@ const checkKonamiCode = useCallback((event) => {
     }
     if (date === "17/3") {
       setBgPic(cloversUrl);
-    }
-    if (date === "1/9") {
-      setBgPic(birthdayUrl);
     }
     if (date === "4/7") {
       setBgPic(julyUrl);
@@ -226,6 +224,9 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#C000FB");
   }
   function egg17() {
+    setBG("#f29530");
+  }
+    function egg18() {
     setBG("#f29530");
   }
 
@@ -292,6 +293,27 @@ const checkKonamiCode = useCallback((event) => {
         </h1>
         <br />
 
+           <span id="hover" onClick={egg18}>
+          <div className="ds17" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription10(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription10("Parachute Fall")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description10} <br />
+              <a href="https://parachutefall.stardomga.me/game/index.html">
+                Play!
+              </a>
+            </span>
+          </div>
+        </span>
+              
         <span id="hover" onClick={egg17}>
           <div className="ds17" id="dsdiv">
             <img
