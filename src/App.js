@@ -292,7 +292,7 @@ const checkKonamiCode = useCallback((event) => {
         <br />
 
            <span id="hover" onClick={egg18}>
-          <div className="ds17" id="dsdiv">
+          <div className="ds18" id="dsdiv">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png"
               alt="dslogo"
