@@ -304,7 +304,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
             <span id="dscontent">
-              {description10} <br />
+              {description11} <br />
               <a href="https://parachutefall.stardomga.me/game/index.html">
                 Play!
               </a>
