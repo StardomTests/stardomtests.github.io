@@ -304,16 +304,16 @@ const checkKonamiCode = useCallback((event) => {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png"
               alt="dslogo"
               id="dslogo"
-              onMouseEnter={(e) => setDescription11(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription12(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription11("Parachute Fall")
+                setDescription11("Gravity Grapple")
               }
             />
             <br />
             <span id="dscontent">
               {description12}
               
-              </a>
+             
             </span>
           </div>
         </span>
