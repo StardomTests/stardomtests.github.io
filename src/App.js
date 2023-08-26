@@ -68,7 +68,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Kurger%20Bing%20Simulator%20Logo.png":
       "Become an Amazing Kurger Bing Employee!",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png":
-      "Fall and Avoid Bombs! (Suggested on Mobile)"
+      "Fall and Avoid Bombs! (Suggested on Mobile)",
+     "https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png":
+      "Swing Through Space! (In Development)"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -124,6 +126,7 @@ const checkKonamiCode = useCallback((event) => {
   const [description9, setDescription9] = useState("Project Multiverse");
   const [description10, setDescription10] = useState("Kurger Bing Heat'n it up Simulator:...");
   const [description11, setDescription11] = useState("Parachute Fall");
+  const [description12, setDescription12] = useState("Gravity Grapple");
 
   let textColor;
   if (bg === "Black") {
@@ -227,6 +230,10 @@ const checkKonamiCode = useCallback((event) => {
     function egg18() {
     setBG("#0868a8");
   }
+   }
+    function egg19() {
+    setBG("#0868a8");
+  }
 
   function handleClick() {
     if (!cursor) {
@@ -290,6 +297,26 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+
+          <span id="hover" onClick={egg19}>
+          <div className="ds19" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription11(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription11("Parachute Fall")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description12}
+              
+              </a>
+            </span>
+          </div>
+        </span>
 
            <span id="hover" onClick={egg18}>
           <div className="ds18" id="dsdiv">
