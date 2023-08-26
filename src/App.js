@@ -230,7 +230,7 @@ const checkKonamiCode = useCallback((event) => {
     function egg18() {
     setBG("#0868a8");
   }
-   }
+  
     function egg19() {
     setBG("#A2E363");
   }
