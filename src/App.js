@@ -312,7 +312,7 @@ const checkKonamiCode = useCallback((event) => {
             <br />
                   <span id="dscontent">
               {description12}<br />
-                <a href="https://drive.google.com/file/d/1Kiwu5310L1wsWHXga4pntL4oOjSVfrZI/view?usp=sharing">Public Beta 2</a>
+                <a href="https://stardomgames.itch.io/gravity-grapple">Public Beta 2</a>
       
               
              
