@@ -668,7 +668,24 @@ const checkKonamiCode = useCallback((event) => {
             -Apps-
           </a>
         </h1>
-        
+        <span id="hover" onClick={egg14}>
+          <div className="ds14" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription("Stardom Gaming Universe Timeline")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description} <br />
+             Under Maintenance
+            </span>
+          </div>
+        </span>
         <hr />
         <h1
           style={{
