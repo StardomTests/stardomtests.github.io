@@ -312,7 +312,7 @@ const checkKonamiCode = useCallback((event) => {
             <br />
                   <span id="dscontent">
               {description12}<br />
-                <a href="https://stardomgames.itch.io/gravity-grapple">The Final Beta</a> | <a href="https://gravitygrapple.stardomga.me">Web</a>
+                <a href="https://stardomgames.itch.io/gravity-grapple">The Final Beta</a> | <a href="https://gravitygrapple.stardomga.me">Web</a> | <a href="https://youtu.be/iiZeJuqiWaw">Trailer</a>
       
               
              
