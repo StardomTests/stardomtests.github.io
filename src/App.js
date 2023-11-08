@@ -70,7 +70,7 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png":
       "Fall and Avoid Bombs! (Suggested on Mobile)",
      "https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png":
-      "Swing Through Space! (In Development)"
+      "Swing Through Space!"
   };
   
 const checkKonamiCode = useCallback((event) => {
