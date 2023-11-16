@@ -238,6 +238,10 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#A2E363");
   }
 
+      function egg20() {
+    setBG("#80607E");
+  }
+
   function handleClick() {
     if (!cursor) {
       setCursor(true);
@@ -300,8 +304,8 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
-          <span id="hover" onClick={egg19}>
-          <div className="ds19" id="dsdiv">
+          <span id="hover" onClick={egg20}>
+          <div className="ds20" id="dsdiv">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/Time%20Scale%20Logo.png"
               alt="dslogo"
