@@ -70,7 +70,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/parachute.png":
       "Fall and Avoid Bombs! (Suggested on Mobile)",
      "https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png":
-      "Swing Through Space!"
+      "Swing Through Space!",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Time%20Scale%20Logo.png":
+      "Platformer Puzzle Game"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -127,6 +129,7 @@ const checkKonamiCode = useCallback((event) => {
   const [description10, setDescription10] = useState("Kurger Bing Heat'n it up Simulator:...");
   const [description11, setDescription11] = useState("Parachute Fall");
   const [description12, setDescription12] = useState("Gravity Grapple");
+  const [description13, setDescription13] = useState("Time Scale");
 
   let textColor;
   if (bg === "Black") {
@@ -297,6 +300,26 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+          <span id="hover" onClick={egg19}>
+          <div className="ds19" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Time%20Scale%20Logo.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription13(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription13("Time Scale")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description12}<br />
+                Coming Soon    
+              
+             
+            </span>
+          </div>
+        </span>
 
           <span id="hover" onClick={egg19}>
           <div className="ds19" id="dsdiv">
@@ -306,7 +329,7 @@ const checkKonamiCode = useCallback((event) => {
               id="dslogo"
               onMouseEnter={(e) => setDescription12(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription11("Gravity Grapple")
+                setDescription12("Gravity Grapple")
               }
             />
             <br />
