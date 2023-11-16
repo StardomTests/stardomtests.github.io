@@ -313,7 +313,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
                   <span id="dscontent">
-              {description12}<br />
+              {description13}<br />
                 Coming Soon    
               
              
