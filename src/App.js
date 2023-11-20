@@ -318,7 +318,7 @@ const checkKonamiCode = useCallback((event) => {
             <br />
                   <span id="dscontent">
               {description13}<br />
-                Coming Soon    
+                <a href="https://timescale.stardomga.me">Play in Browser</a>    
               
              
             </span>
