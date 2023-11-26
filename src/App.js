@@ -318,7 +318,7 @@ const checkKonamiCode = useCallback((event) => {
             <br />
                   <span id="dscontent">
               {description13}<br />
-                <a href="https://timescale.stardomga.me">Play in Browser</a>    
+                <a href="https://timescale.stardomga.me">Play in Browser</a> | <a href="https://stardomgames.itch.io/time-scale">Download!</a>
               
              
             </span>
