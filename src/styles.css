@@ -891,7 +891,7 @@ a {
 
 .ds20 {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 1);
   border: solid 4px #212121;
   webkit-transition: background-color 250ms ease-in-out;
   -moz-transition: background-color 250ms ease-in-out;
@@ -906,6 +906,8 @@ a {
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
+  backdrop-filter: blur(10px); /* Add this line */
+
 }
 
 .ds20:hover {
@@ -921,10 +923,6 @@ a {
   transform: scale(1.1) rotate(2deg);
 }
 
-#dscontent{
-	  backdrop-filter: blur(10px); /* Add this line */
-
-}
 
 @keyframes sway {
   0% {
