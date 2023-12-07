@@ -43,7 +43,7 @@ hr {
   100% { border-color: transparent; }
 }
 
-body {
+#dscontent {
   overflow: hidden;
   border-right: 2px solid;
   white-space: nowrap;
