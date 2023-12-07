@@ -906,6 +906,7 @@ a {
   padding: 1rem;
   border-radius: 20px;
   text-align: center;
+  backdrop-filter: blur(10px); /* Add this line */
 }
 
 .ds20:hover {
