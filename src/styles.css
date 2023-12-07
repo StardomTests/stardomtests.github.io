@@ -47,8 +47,8 @@ hr {
   overflow: hidden;
   border-right: 2px solid;
   white-space: nowrap;
-  animation: typewriter 4s steps(50) infinite,
-             blink 1s step-end infinite;
+  animation: typewriter 4s steps(5000) infinite,
+             blink 50s step-end infinite;
 }
 
 
