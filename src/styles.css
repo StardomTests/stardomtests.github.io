@@ -31,6 +31,27 @@ hr {
   animation: bgscroll 20s linear infinite;
 }
 
+
+@keyframes typewriter {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: black; }
+  100% { border-color: transparent; }
+}
+
+body {
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  animation: typewriter 4s steps(50) infinite,
+             blink 1s step-end infinite;
+}
+
+
 @keyframes bgscroll {
   0% {
     background-position: 0 0;
