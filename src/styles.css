@@ -923,6 +923,40 @@ a {
   transform: scale(1.1) rotate(2deg);
 }
 
+.ds21 {
+  position: relative;
+  background-color: rgba(255, 255, 255, 1);
+  border: solid 4px #212121;
+  webkit-transition: background-color 250ms ease-in-out;
+  -moz-transition: background-color 250ms ease-in-out;
+  -ms-transition: background-color 250ms ease-in-out;
+  -o-transition: background-color 250ms ease-in-out;
+  transition: background-color 250ms ease-in-out;
+  webkit-transition: border-color 250ms ease-in-out;
+  -moz-transition: border-color 250ms ease-in-out;
+  -ms-transition: border-color 250ms ease-in-out;
+  -o-transition: border-color 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(1px); /* Add this line */
+
+}
+
+.ds21:hover {
+  border: double 4px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(-45deg, #efc75e, #000000),
+    linear-gradient(90deg, #efc75e, #efc75e, #000000, #000000);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 150% 150%;
+  animation: sway 2s ease-in-out infinite;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1) rotate(2deg);
+}
+
 
 @keyframes sway {
   0% {
