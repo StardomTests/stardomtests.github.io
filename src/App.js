@@ -72,7 +72,9 @@ function Home(props) {
      "https://raw.githubusercontent.com/jordan-trempert/media/main/grapple.png":
       "Swing Through Space!",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Time%20Scale%20Logo.png":
-      "Platformer Puzzle Game"
+      "Platformer Puzzle Game",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/Productivity.png":
+      "Become a Corporate Slave! Man I Love April!"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -130,6 +132,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description11, setDescription11] = useState("Parachute Fall");
   const [description12, setDescription12] = useState("Gravity Grapple");
   const [description13, setDescription13] = useState("Time Scale");
+  const [description14, setDescription14] = useState("Productivity Quest 2024");
+
 
   let textColor;
   if (bg === "Black") {
@@ -242,6 +246,10 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#80607E");
   }
 
+  function egg21() {
+    setBG("#EFC75E");
+  }
+
   function handleClick() {
     if (!cursor) {
       setCursor(true);
@@ -304,6 +312,28 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+                    <span id="hover" onClick={egg21}>
+          <div className="ds21" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Productivity.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription14(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription14("Productivity Quest 2024")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description12}<br />
+                <a href="https://stardomgames.itch.io/gravity-grapple">Download Now!</a>
+    
+              
+             
+            </span>
+          </div>
+        </span>
+              
           <span id="hover" onClick={egg20}>
           <div className="ds20" id="dsdiv">
             <img
