@@ -205,7 +205,7 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#f96854");
   }
   function egg8() {
-    setBG("#00ACEE");
+    setBG("Black");
   }
   function egg9() {
     setBG("#7289DA");
@@ -662,7 +662,7 @@ const checkKonamiCode = useCallback((event) => {
         <span id="hover" onClick={egg8}>
           <div className="ds8" id="dsdiv">
             <img
-              src="https://github.com/jordan-trempert/media/blob/main/twitter.png?raw=true"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Fsgb8v6Qw8aKEbfpp9YGV5-1200-80.jpg"
               alt="abp2logo"
               id="dslogo"
             />
