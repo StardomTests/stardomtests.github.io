@@ -668,7 +668,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
             <span id="dscontent">
-              Twitter - <a href="https://twitter.com/GamesStardom">Follow!</a>
+              x - <a href="https://twitter.com/Stardom_Games">Follow!</a>
             </span>
           </div>
         </span>
@@ -762,7 +762,7 @@ const checkKonamiCode = useCallback((event) => {
             <Timeline
               dataSource={{
                 sourceType: "profile",
-                screenName: "GamesStardom"
+                screenName: "Stardom_Games"
               }}
               options={{
                 height: "400",
