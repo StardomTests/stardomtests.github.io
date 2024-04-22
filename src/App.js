@@ -662,7 +662,7 @@ const checkKonamiCode = useCallback((event) => {
         <span id="hover" onClick={egg8}>
           <div className="ds8" id="dsdiv">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/Fsgb8v6Qw8aKEbfpp9YGV5-1200-80.jpg"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/x%20logo.png"
               alt="abp2logo"
               id="dslogo"
             />
