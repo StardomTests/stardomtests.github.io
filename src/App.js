@@ -47,8 +47,8 @@ function Home(props) {
    
   const [konamiCodeIndex, setKonamiCodeIndex] = useState(0);
   const descriptions = {
-    "https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png":
-      "The Timeline For The Stardom Gaming Universe",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/ae13dcdb84cb157c3f8b35c5077688d058a5458f.png":
+      "This mod overhauls The End in an extreme way!",
     "https://github.com/jordan-trempert/media/blob/main/YARO.png?raw=true":
       "A Collection of Games Commonly Remade",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Project%20Paradox.png":
@@ -280,7 +280,7 @@ const checkKonamiCode = useCallback((event) => {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> | <a href="#socials">Socials</a> |{" "}
-                <a href="#apps">Apps</a> | <a href="#tweets">Tweets</a> |{" "}
+                <a href="#apps">Mods</a> | <a href="#tweets">Tweets</a> |{" "}
                 <a href="https://www.redbubble.com/people/stardom-games/works/142818683-stardom-games-merch?asc=u">
                   <img
                     id="icon"
@@ -728,18 +728,18 @@ const checkKonamiCode = useCallback((event) => {
         <span id="hover" onClick={egg14}>
           <div className="ds14" id="dsdiv">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/stardom-logo%20(1).png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/ae13dcdb84cb157c3f8b35c5077688d058a5458f.png"
               alt="dslogo"
               id="dslogo"
               onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription("Stardom Gaming Universe Timeline")
+                setDescription("Stardom's Extreme End")
               }
             />
             <br />
             <span id="dscontent">
               {description} <br />
-             Under Maintenance
+             <a href="https://modrinth.com/mod/stardoms-extreme-end/">Modrinth</a>
             </span>
           </div>
         </span>
