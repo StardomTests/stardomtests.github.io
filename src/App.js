@@ -722,7 +722,7 @@ const checkKonamiCode = useCallback((event) => {
           }}
         >
           <a href id="apps">
-            -Apps-
+            -Mods-
           </a>
         </h1>
         <span id="hover" onClick={egg14}>
