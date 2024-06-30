@@ -704,20 +704,7 @@ a {
 .ds14:hover {
   border: double 4px transparent;
   border-radius: 20px;
-  background-image: linear-gradient(
-      -45deg,
-      rgb(106, 233, 134) 0%,
-      rgb(255, 124, 216) 25%,
-      rgb(81, 5, 223) 50%,
-      rgb(253, 50, 43) 75%
-    ),
-    linear-gradient(
-      90deg,
-      rgb(106, 233, 134) 0%,
-      rgb(255, 124, 216) 25%,
-      rgb(81, 5, 223) 50%,
-      rgb(253, 50, 43) 75%
-    );
+  background-image: linear-gradient(90deg, rgba(238,246,180,1) 0%, rgba(166,116,165,1) 100%);
 
   background-origin: border-box;
   background-clip: padding-box, border-box;
