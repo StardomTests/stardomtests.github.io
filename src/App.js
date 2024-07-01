@@ -120,7 +120,7 @@ const checkKonamiCode = useCallback((event) => {
   const [bg, setBG] = useState("Black");
   const [cursor, setCursor] = useState(false);
   const [description, setDescription] = useState(
-    "Stardom Gaming Universe Timeline"
+    "Stardom's Extreme End"
   );
   const [description2, setDescription2] = useState("Yet Another Rip-Off");
   const [description3, setDescription3] = useState("Project Paradox");
@@ -135,6 +135,7 @@ const checkKonamiCode = useCallback((event) => {
   const [description12, setDescription12] = useState("Gravity Grapple");
   const [description13, setDescription13] = useState("Time Scale");
   const [description14, setDescription14] = useState("Productivity Quest 2024");
+  const [description15, setDescription15] = useState("Stardom's Sync");
 
 
   let textColor;
@@ -746,7 +747,7 @@ const checkKonamiCode = useCallback((event) => {
           </div>
         </span>
         <span id="hover" onClick={egg6}>
-          <div className="ds14" id="dsdiv">
+          <div className="ds6" id="dsdiv">
             <img
               src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
               alt="dslogo"
@@ -758,7 +759,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
             <span id="dscontent">
-              {description} <br />
+              {description15} <br />
              <a href="https://modrinth.com/mod/stardoms-sync/">Modrinth</a>
             </span>
           </div>
