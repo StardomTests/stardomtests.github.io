@@ -752,9 +752,9 @@ const checkKonamiCode = useCallback((event) => {
               src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
               alt="dslogo"
               id="dslogo"
-              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription15(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription("Stardom's Sync")
+                setDescription15("Stardom's Sync")
               }
             />
             <br />
