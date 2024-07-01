@@ -743,23 +743,24 @@ const checkKonamiCode = useCallback((event) => {
               {description} <br />
              <a href="https://modrinth.com/mod/stardoms-extreme-end/">Modrinth</a>
             </span>
-              <span id="hover" onClick={egg6}>
-          <div className="ds6" id="dsdiv">
+          </div>
+        </span>
+        <span id="hover" onClick={egg6}>
+          <div className="ds14" id="dsdiv">
             <img
               src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
-              alt="abp2logo"
+              alt="dslogo"
               id="dslogo"
-                 onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
               onMouseLeave={() =>
                 setDescription("Stardom's Sync")
+              }
             />
             <br />
             <span id="dscontent">
               {description} <br />
              <a href="https://modrinth.com/mod/stardoms-sync/">Modrinth</a>
             </span>
-          </div>
-        </span>
           </div>
         </span>
         <hr />
