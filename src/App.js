@@ -76,7 +76,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/Productivity.png":
       "Become a Corporate Slave! Man I Love April!",
     "https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png":
-      "Syncs real life time and weather into Minecraft"
+      "Syncs real life time and weather into Minecraft",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/38974805_1162594521647001_8678711909508751475_n.png":
+      "Swing Through the Multiverse! (VR)"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -136,6 +138,7 @@ const checkKonamiCode = useCallback((event) => {
   const [description13, setDescription13] = useState("Time Scale");
   const [description14, setDescription14] = useState("Productivity Quest 2024");
   const [description15, setDescription15] = useState("Stardom's Sync");
+  const [description16, setDescription16] = useState("Gravity Grapple: Dimensions");
 
 
   let textColor;
@@ -315,6 +318,28 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+
+           <span id="hover" onClick={egg19}>
+          <div className="ds19" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/38974805_1162594521647001_8678711909508751475_n.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription16(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription16("Gravity Grapple: Dimensions")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description12}<br />
+                <a href="https://www.meta.com/experiences/8988079141207254/?utm_source=oculus&utm_medium=share">App Lab</a>
+    
+              
+             
+            </span>
+          </div>
+        </span>
                     <span id="hover" onClick={egg21}>
           <div className="ds21" id="dsdiv">
             <img
