@@ -324,7 +324,7 @@ const checkKonamiCode = useCallback((event) => {
         </h1>
         <br />
           <span id="hover" onClick={egg22}>
-          <div className="ds19" id="dsdiv">
+          <div className="ds22" id="dsdiv">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/1000018639-removebg-preview.png"
               alt="dslogo"
@@ -336,7 +336,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
                   <span id="dscontent">
-              {description17}<br 
+              {description17}<br />
                 - Coming Soon -
     
               
