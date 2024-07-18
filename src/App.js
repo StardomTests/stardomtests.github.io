@@ -78,7 +78,9 @@ function Home(props) {
     "https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png":
       "Syncs real life time and weather into Minecraft",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/38974805_1162594521647001_8678711909508751475_n.png":
-      "Swing Through the Multiverse! (VR)"
+      "Swing Through the Multiverse! (VR)",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/1000018639-removebg-preview.png":
+      "Gather resources and defend your base!"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -139,7 +141,7 @@ const checkKonamiCode = useCallback((event) => {
   const [description14, setDescription14] = useState("Productivity Quest 2024");
   const [description15, setDescription15] = useState("Stardom's Sync");
   const [description16, setDescription16] = useState("Gravity Grapple: Dimensions");
-
+  const [description17, setDescription17] = useState("Cube Conquest");
 
   let textColor;
   if (bg === "Black") {
@@ -255,6 +257,9 @@ const checkKonamiCode = useCallback((event) => {
   function egg21() {
     setBG("#EFC75E");
   }
+  function egg22() {
+    setBG("#112b33");
+  }
 
   function handleClick() {
     if (!cursor) {
@@ -318,6 +323,27 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+          <span id="hover" onClick={egg22}>
+          <div className="ds19" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/1000018639-removebg-preview.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription17(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription17("Cube Conquest")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description17}<br 
+                - Coming Soon -
+    
+              
+             
+            </span>
+          </div>
+        </span>
 
            <span id="hover" onClick={egg19}>
           <div className="ds19" id="dsdiv">
