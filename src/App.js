@@ -358,7 +358,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
                   <span id="dscontent">
-              {description12}<br />
+              {description16}<br />
                 <a href="https://www.meta.com/experiences/8988079141207254/?utm_source=oculus&utm_medium=share">App Lab</a>
     
               
