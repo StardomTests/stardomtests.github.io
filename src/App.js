@@ -258,7 +258,7 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#EFC75E");
   }
   function egg22() {
-    setBG("#112b33");
+    setBG("#5CE1E6");
   }
 
   function handleClick() {
