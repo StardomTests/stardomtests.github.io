@@ -337,7 +337,7 @@ const checkKonamiCode = useCallback((event) => {
             <br />
                   <span id="dscontent">
               {description17}<br />
-                <a href="https://stardomgames.itch.io/cube-conquest">Download Beta!</a>
+                - Coming Soon -
     
               
              
