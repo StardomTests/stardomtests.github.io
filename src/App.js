@@ -819,6 +819,7 @@ const checkKonamiCode = useCallback((event) => {
                 : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
           }}
         >
+          <h1>
           <a href id="apps">
           -Apps-
           </a>
