@@ -80,7 +80,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/38974805_1162594521647001_8678711909508751475_n.png":
       "Swing Through the Multiverse! (VR)",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/1000018639-removebg-preview.png":
-      "Gather resources and defend your base!"
+      "Gather resources and defend your base!",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/moviewer.png":
+      "View and rate movies!"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -142,6 +144,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description15, setDescription15] = useState("Stardom's Sync");
   const [description16, setDescription16] = useState("Gravity Grapple: Dimensions");
   const [description17, setDescription17] = useState("Cube Conquest");
+  const [description18, setDescription18] = useState("MoViewer");
+
 
   let textColor;
   if (bg === "Black") {
@@ -823,42 +827,25 @@ const checkKonamiCode = useCallback((event) => {
             -Apps-
           </a>
         </h1>
-        <span id="hover" onClick={egg14}>
-          <div className="ds14" id="dsdiv">
+        <span id="hover" onClick={egg6}>
+          <div className="ds6" id="dsdiv">
             <img
-              src="https://raw.githubusercontent.com/jordan-trempert/media/main/ae13dcdb84cb157c3f8b35c5077688d058a5458f.png"
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/moviewer.png"
               alt="dslogo"
               id="dslogo"
               onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription("Stardom's Extreme End")
+                setDescription("MoViewer")
               }
             />
             <br />
             <span id="dscontent">
               {description} <br />
-             <a href="https://modrinth.com/mod/stardoms-extreme-end/">Modrinth</a>
+             <a href="https://moviewer.stardomga.me">Web App</a>
             </span>
           </div>
         </span>
-        <span id="hover" onClick={egg6}>
-          <div className="ds6" id="dsdiv">
-            <img
-              src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
-              alt="dslogo"
-              id="dslogo"
-              onMouseEnter={(e) => setDescription15(descriptions[e.target.src])}
-              onMouseLeave={() =>
-                setDescription15("Stardom's Sync")
-              }
-            />
-            <br />
-            <span id="dscontent">
-              {description15} <br />
-             <a href="https://modrinth.com/mod/stardoms-sync/">Modrinth</a>
-            </span>
-          </div>
-        </span>
+        
         <hr />
                <h1
           style={{
