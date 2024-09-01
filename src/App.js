@@ -819,13 +819,29 @@ const checkKonamiCode = useCallback((event) => {
                 : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
           }}
         >
-          <h1>
           <a href id="apps">
-          -Apps-
+            -Apps-
           </a>
-          </h1>
-          <hr />
-          <span id="hover" onClick={egg6}>
+        </h1>
+        <span id="hover" onClick={egg14}>
+          <div className="ds14" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/ae13dcdb84cb157c3f8b35c5077688d058a5458f.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription("Stardom's Extreme End")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description} <br />
+             <a href="https://modrinth.com/mod/stardoms-extreme-end/">Modrinth</a>
+            </span>
+          </div>
+        </span>
+        <span id="hover" onClick={egg6}>
           <div className="ds6" id="dsdiv">
             <img
               src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
@@ -843,6 +859,7 @@ const checkKonamiCode = useCallback((event) => {
             </span>
           </div>
         </span>
+        <hr />
           <a href id="tweets">
             -Tweets-
           </a>
