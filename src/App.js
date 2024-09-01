@@ -291,14 +291,8 @@ const checkKonamiCode = useCallback((event) => {
             <span id="navbar" style={{ backgroundColor: bg, color: textColor }}>
               <center>
                 <a href="#games"> Games</a> | <a href="#socials">Socials</a> |{" "}
-                <a href="#apps">Mods</a> | <a href="#tweets">Tweets</a> |{" "}
-                <a href="https://www.redbubble.com/people/stardom-games/works/142818683-stardom-games-merch?asc=u">
-                  <img
-                    id="icon"
-                    alt="tweets"
-                    src="https://github.com/jordan-trempert/media/blob/main/merch1.png?raw=true"
-                  ></img>
-                </a>
+                <a href="#mods">Mods</a> | <a href="#tweets">Tweets</a> |{" "}
+                <a href="#apps">Apps</a>
               </center>
             </span>
           </div>
@@ -775,7 +769,7 @@ const checkKonamiCode = useCallback((event) => {
                 : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
           }}
         >
-          <a href id="apps">
+          <a href id="mods">
             -Mods-
           </a>
         </h1>
@@ -825,6 +819,27 @@ const checkKonamiCode = useCallback((event) => {
                 : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
           }}
         >
+          <a href id="apps">
+          -Apps-
+          </a>
+          <span id="hover" onClick={egg6}>
+          <div className="ds6" id="dsdiv">
+            <img
+              src="https://cdn.modrinth.com/data/iLPzEDlD/55a2d8c5dfa847d149b34dc54fa6f6952afcb31f.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription15(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription15("Stardom's Sync")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description15} <br />
+             <a href="https://modrinth.com/mod/stardoms-sync/">Modrinth</a>
+            </span>
+          </div>
+        </span>
           <a href id="tweets">
             -Tweets-
           </a>
