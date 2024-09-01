@@ -840,7 +840,7 @@ const checkKonamiCode = useCallback((event) => {
             />
             <br />
             <span id="dscontent">
-              {description} <br />
+              {description18} <br />
              <a href="https://moviewer.stardomga.me">Web App</a>
             </span>
           </div>
