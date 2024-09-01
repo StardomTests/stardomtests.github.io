@@ -833,9 +833,9 @@ const checkKonamiCode = useCallback((event) => {
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/moviewer.png"
               alt="dslogo"
               id="dslogo"
-              onMouseEnter={(e) => setDescription(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription18(descriptions[e.target.src])}
               onMouseLeave={() =>
-                setDescription("MoViewer")
+                setDescription18("MoViewer")
               }
             />
             <br />
