@@ -860,6 +860,15 @@ const checkKonamiCode = useCallback((event) => {
           </div>
         </span>
         <hr />
+               <h1
+          style={{
+            color: bg,
+            textShadow:
+              bg === "Black"
+                ? "-1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF"
+                : "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"
+          }}
+        >
           <a href id="tweets">
             -Tweets-
           </a>
