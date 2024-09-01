@@ -822,6 +822,8 @@ const checkKonamiCode = useCallback((event) => {
           <a href id="apps">
           -Apps-
           </a>
+          </h1>
+          <hr />
           <span id="hover" onClick={egg6}>
           <div className="ds6" id="dsdiv">
             <img
