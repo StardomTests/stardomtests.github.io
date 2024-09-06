@@ -82,7 +82,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/1000018639-removebg-preview.png":
       "Gather resources and defend your base!",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/moviewer.png":
-      "View and rate movies!"
+      "View and rate movies!",
+    "https://cdn.modrinth.com/data/eCxwIAgh/070f5bac4dc3ae760796d66458e006b7c81fd8ba.png":
+      "Adds many QoL and customization features to Minecraft!"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -145,6 +147,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description16, setDescription16] = useState("Gravity Grapple: Dimensions");
   const [description17, setDescription17] = useState("Cube Conquest");
   const [description18, setDescription18] = useState("MoViewer");
+  const [description19, setDescription19] = useState("Stardom's Client");
+
 
 
   let textColor;
@@ -263,6 +267,9 @@ const checkKonamiCode = useCallback((event) => {
   }
   function egg22() {
     setBG("#5CE1E6");
+  }
+  function egg23() {
+    setBG("#f1c332");
   }
 
   function handleClick() {
@@ -810,6 +817,24 @@ const checkKonamiCode = useCallback((event) => {
             <span id="dscontent">
               {description15} <br />
              <a href="https://modrinth.com/mod/stardoms-sync/">Modrinth</a>
+            </span>
+          </div>
+        </span>
+        <span id="hover" onClick={egg23}>
+          <div className="ds23" id="dsdiv">
+            <img
+              src="https://cdn.modrinth.com/data/eCxwIAgh/070f5bac4dc3ae760796d66458e006b7c81fd8ba.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription19(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription19("Stardom's Client")
+              }
+            />
+            <br />
+            <span id="dscontent">
+              {description19} <br />
+             <a href="https://modrinth.com/mod/stardoms-client/">Modrinth</a>
             </span>
           </div>
         </span>
