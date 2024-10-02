@@ -179,26 +179,22 @@ const checkKonamiCode = useCallback((event) => {
 
   const [bgPic, setBgPic] = useState(starsUrl);
   console.log(date);
-  useEffect(() => {
-    if (date === "25/12") {
-      setBgPic(candyUrl);
-    }
-    if (date === "31/10") {
-      setBgPic(pumpkinsUrl);
-    }
-    if (date === "14/2") {
-      setBgPic(heartsUrl);
-    }
-    if (date === "17/3") {
-      setBgPic(cloversUrl);
-    }
-    if (date === "4/7") {
-      setBgPic(julyUrl);
-    }
-    else {
-      setBgPic(starsUrl);
-    }
-  }, [date, starsUrl, candyUrl]);
+ useEffect(() => {
+  if (date === "25/12") {
+    setBgPic(candyUrl);
+  } else if (date === "31/10") {
+    setBgPic(pumpkinsUrl);
+  } else if (date === "14/2") {
+    setBgPic(heartsUrl);
+  } else if (date === "17/3") {
+    setBgPic(cloversUrl);
+  } else if (date === "4/7") {
+    setBgPic(julyUrl);
+  } else {
+    setBgPic(starsUrl);
+  }
+}, [date, starsUrl, candyUrl]);
+
 
   function egg() {
     setBG("Black");
