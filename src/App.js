@@ -332,6 +332,28 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+
+           <span id="hover" onClick={egg24}>
+          <div className="ds24" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/cc.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription17(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription20("Courtroom Chaos")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description20}<br />
+                <a href="https://courtroom-chaos.stardomga.me">Play in Browser!</a>
+    
+              
+             
+            </span>
+          </div>
+        </span>
          
           <span id="hover" onClick={egg22}>
           <div className="ds22" id="dsdiv">
