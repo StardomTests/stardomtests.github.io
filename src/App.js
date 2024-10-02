@@ -941,4 +941,5 @@ const checkKonamiCode = useCallback((event) => {
       </div>
     </div>
   );
+  }
 }
