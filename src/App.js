@@ -84,7 +84,9 @@ function Home(props) {
     "https://raw.githubusercontent.com/jordan-trempert/media/main/moviewer.png":
       "View and rate movies!",
     "https://cdn.modrinth.com/data/eCxwIAgh/070f5bac4dc3ae760796d66458e006b7c81fd8ba.png":
-      "Adds many QoL and customization features to Minecraft!"
+      "Adds many QoL and customization features to Minecraft!",
+    "https://raw.githubusercontent.com/jordan-trempert/media/main/cc.png":
+      "Represent Clients to an AI Judge!"
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -148,6 +150,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description17, setDescription17] = useState("Cube Conquest");
   const [description18, setDescription18] = useState("MoViewer");
   const [description19, setDescription19] = useState("Stardom's Client");
+  const [description20, setDescription20] = useState("Courtroom Chaos");
+
 
 
 
@@ -271,6 +275,10 @@ const checkKonamiCode = useCallback((event) => {
   function egg23() {
     setBG("#f1c332");
   }
+   }
+  function egg24() {
+    setBG("#ffbb57");
+  }
 
   function handleClick() {
     if (!cursor) {
@@ -328,6 +336,27 @@ const checkKonamiCode = useCallback((event) => {
           </a>
         </h1>
         <br />
+          <span id="hover" onClick={egg24}>
+          <div className="ds24" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/cc.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription17(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription20("Courtroom Chaos")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description20}<br />
+                <a href="https://courtroom-chaos.stardomga.me">Play in Browser!</a>
+    
+              
+             
+            </span>
+          </div>
+        </span>
           <span id="hover" onClick={egg22}>
           <div className="ds22" id="dsdiv">
             <img
