@@ -86,7 +86,9 @@ function Home(props) {
     "https://cdn.modrinth.com/data/eCxwIAgh/070f5bac4dc3ae760796d66458e006b7c81fd8ba.png":
       "Adds many QoL and customization features to Minecraft!",
     "https://raw.githubusercontent.com/jordan-trempert/media/main/cc.png":
-      "Represent Clients to an AI Judge!"
+      "Represent Clients to an AI Judge!",
+        "https://raw.githubusercontent.com/jordan-trempert/media/main/AI.png":
+      "Risk mixed with DND and AI. Based on the DougDoug streams."
   };
   
 const checkKonamiCode = useCallback((event) => {
@@ -151,6 +153,8 @@ const checkKonamiCode = useCallback((event) => {
   const [description18, setDescription18] = useState("MoViewer");
   const [description19, setDescription19] = useState("Stardom's Client");
   const [description20, setDescription20] = useState("Courtroom Chaos");
+  const [description21, setDescription21] = useState("AI Invasion");
+
 
 
 
@@ -274,6 +278,10 @@ const checkKonamiCode = useCallback((event) => {
     setBG("#ffbb57");
   }
 
+    function egg25() {
+    setBG("#8C4C00");
+  }
+
   function handleClick() {
     if (!cursor) {
       setCursor(true);
@@ -331,13 +339,35 @@ const checkKonamiCode = useCallback((event) => {
         </h1>
         <br />
 
+          <span id="hover" onClick={egg25}>
+          <div className="ds25" id="dsdiv">
+            <img
+              src="https://raw.githubusercontent.com/jordan-trempert/media/main/AI.png"
+              alt="dslogo"
+              id="dslogo"
+              onMouseEnter={(e) => setDescription21(descriptions[e.target.src])}
+              onMouseLeave={() =>
+                setDescription21("AI Invasion")
+              }
+            />
+            <br />
+                  <span id="dscontent">
+              {description21}<br />
+                <a href="https://ai-invasion.stardomga.me/">Play!</a>
+    
+              
+             
+            </span>
+          </div>
+        </span>
+
            <span id="hover" onClick={egg24}>
           <div className="ds24" id="dsdiv">
             <img
               src="https://raw.githubusercontent.com/jordan-trempert/media/main/cc.png"
               alt="dslogo"
               id="dslogo"
-              onMouseEnter={(e) => setDescription17(descriptions[e.target.src])}
+              onMouseEnter={(e) => setDescription20(descriptions[e.target.src])}
               onMouseLeave={() =>
                 setDescription20("Courtroom Chaos")
               }
